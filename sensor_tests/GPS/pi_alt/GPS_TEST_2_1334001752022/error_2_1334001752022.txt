@@ -1,0 +1,17 @@
+15:34:14_USB_3: ,Message PUBX invalid checksum 13 - should be 3A.
+15:34:38_USB_1: ,Message PUBX invalid checksum 1B - should be 2D.
+15:34:42_USB_R: ,Message PUBX invalid checksum 13 - should be 2D.
+15:36:08_USB_3: ,Message PUBX invalid checksum 10 - should be 24.
+15:36:25_USB_3: ,Message PUBX invalid checksum 16 - should be 3B.
+15:36:29_USB_3: ,Message PUBX invalid checksum 17 - should be 76.
+15:36:35_USB_3: ,Message PUBX invalid checksum 1E - should be 03.
+15:38:14_USB_3: ,Message PUBX invalid checksum 11 - should be 7C.
+15:38:56_USB_1: ,Message PUBX invalid checksum 1C - should be 42.
+15:42:50_USB_R: ,Message PUBX invalid checksum 1C - should be 7D.
+15:42:51_USB_3: ,Message PUBX invalid checksum 1B - should be 0C.
+15:42:59_USB_3: ,Message PUBX invalid checksum 10 - should be 27.
+15:43:07_USB_R: ,Message PUBX invalid checksum 1C - should be 48.
+15:43:12_USB_1: ,Message PUBX invalid checksum 16 - should be 02.
+15:43:18_USB_1: ,Message PUBX invalid checksum 11 - should be 7F.
+15:43:34_USB_3: ,Message PUBX invalid checksum 1E - should be 09.
+15:43:42_USB_R: ,Message PUBX invalid checksum 13 - should be 75.
