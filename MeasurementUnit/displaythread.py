@@ -19,11 +19,10 @@ class DisplayThread(BaseThread):
         self.cs = cs
         self.dc = dc
         self.rst = rst
-
-    def initilize(self):
-        """Connect to display"""
-        #print("DisplayThread: initialize()")
+        
+        # Connect to display.
         self.disp = ST7735.ST7735(port=self.port, cs=self.cs, dc=self.dc, backlight=None, rst=self.rst, width=128, height=160, rotation=270, invert=False)
+        # Prepare internal data.
         self.height = self.disp.height
         self.width = self.disp.width
         self.img = Image.new('RGB', (self.width, self.height))
@@ -31,8 +30,8 @@ class DisplayThread(BaseThread):
         self.font_small = ImageFont.truetype(font="/usr/share/fonts/truetype/pyboto/Piboto-Bold.ttf", size=20)
         self.font_big = ImageFont.truetype(font="/usr/share/fonts/truetype/pyboto/Piboto-Bold.ttf", size=60)
     
-    def start_measurement(self):
-        """Display timer while measurement"""
+    def measurement_loop(self):
+        """Displays timer while measurement."""
         #print("DisplayThread: display_timer()")
         start_time = time.perf_counter()
         while self.start_measurement_event.is_set():

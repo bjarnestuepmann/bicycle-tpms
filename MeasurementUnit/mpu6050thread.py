@@ -22,20 +22,21 @@ class MPU6050Thread(BaseThread):
         self.i2c_bus = i2c_bus
         self.address = address
 
-    def initilize(self):
+        # Connect to device.
         self.bus = smbus2.SMBus(self.i2c_bus)
         # Initialize MPU.
         self.bus.write_byte_data(self.address, 0x6b, 0)
-        
+        # Prepare internal data.
         self.measurement_count = 7
         self.data_header = "timestamp,ACCEL_X,ACCEL_Y,ACCEL_Z,GYRO_X,GYRO_Y,GYRO_Z"
         self.data = np.zeros(shape=(0,self.measurement_count))
 
-    def start_measurement(self):
+    def measurement_loop(self):
         current_data = np.zeros(shape=self.measurement_count)
         raw_values = self.bus.read_i2c_block_data(self.address, 0x3b, 14)
 
         while self.start_measurement_event.is_set():
+            raw_values = self.bus.read_i2c_block_data(self.address, 0x3b, 14)
             np.put(current_data, 0, time.time())
             np.put(current_data, 1, self.combine_bytes_to_word(raw_values[1], raw_values[0]))
             np.put(current_data, 2, self.combine_bytes_to_word(raw_values[3], raw_values[2]))

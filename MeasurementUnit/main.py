@@ -46,6 +46,30 @@ def main():
                           address=0x69
                          )
     mpu_2.initilize()
+    mpu_3 = MPU6050Thread("MPU_3",
+                          start_measurement_event,
+                          terminated_event,
+                          data_logger=dl,
+                          i2c_bus=3,
+                          address=0x68
+                         )
+    mpu_3.initilize()
+    mpu_4 = MPU6050Thread("MPU_4",
+                          start_measurement_event,
+                          terminated_event,
+                          data_logger=dl,
+                          i2c_bus=3,
+                          address=0x69
+                         )
+    mpu_4.initilize()
+    mpu_5 = MPU6050Thread("MPU_5",
+                          start_measurement_event,
+                          terminated_event,
+                          data_logger=dl,
+                          i2c_bus=4,
+                          address=0x68
+                         )
+    mpu_5.initilize()
 
     # Wheel Speed Sensor Thread
     whl_spd_sensor = WheelSpeedSensorThread('WheelSpeed',
@@ -61,12 +85,15 @@ def main():
     dl.start()
     mpu_1.start()
     mpu_2.start()
+    mpu_3.start()
+    mpu_4.start()
+    mpu_5.start()
     whl_spd_sensor.start()
 
     try:
         print("Start measurement for 10 seconds.")
         start_measurement_event.set()
-        sleep(90)
+        sleep(300)
 
     except KeyboardInterrupt:
         print(": Terminated by User")

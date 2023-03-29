@@ -13,17 +13,17 @@ class WheelSpeedSensorThread(BaseThread):
         self.data_logger = data_logger
         self.gpio_gnd = gpio_gnd
         self.gpio_v = gpio_v
-
-    def initilize(self):
+        
+        # Set up GPIO-Pins for measurements.
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.gpio_v, GPIO.OUT)
         GPIO.setup(self.gpio_gnd, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
         GPIO.output(self.gpio_v, 1)
-
+        # Prepare internal data.
         self.timestamps = np.zeros(shape=(0,1))
         self.csv_header = "timestamps_rising_edge"
 
-    def start_measurement(self):
+    def measurement_loop(self):
         while self.start_measurement_event.is_set():
             # Wait for an rising edge. Timeout: 1 sec.
             channel = GPIO.wait_for_edge(self.gpio_gnd, GPIO.RISING, timeout=1000)
