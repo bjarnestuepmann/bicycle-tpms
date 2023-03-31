@@ -27,31 +27,38 @@ class MPU6050Thread(BaseThread):
         # Initialize MPU.
         self.bus.write_byte_data(self.address, 0x6b, 0)
         # Prepare internal data.
-        self.measurement_count = 7
-        self.data_header = "timestamp,ACCEL_X,ACCEL_Y,ACCEL_Z,GYRO_X,GYRO_Y,GYRO_Z"
-        self.data = np.zeros(shape=(0,self.measurement_count))
+        self.measurement_count = 8
+        self.data_header = "timestamp,ACCEL_X,ACCEL_Y,ACCEL_Z,TEMP,GYRO_X,GYRO_Y,GYRO_Z"
+        self.raw_data = dict()
+        self.data = []
 
     def measurement_loop(self):
-        current_data = np.zeros(shape=self.measurement_count)
-        raw_values = self.bus.read_i2c_block_data(self.address, 0x3b, 14)
-
+        """
+            Reads raw values from sensor and store them in temp data storage.
+            After measurement: Postprocessing the raw data and store them to
+            file.
+        """
         while self.start_measurement_event.is_set():
+            timestamp = time.time()
             raw_values = self.bus.read_i2c_block_data(self.address, 0x3b, 14)
-            np.put(current_data, 0, time.time())
-            np.put(current_data, 1, self.combine_bytes_to_word(raw_values[1], raw_values[0]))
-            np.put(current_data, 2, self.combine_bytes_to_word(raw_values[3], raw_values[2]))
-            np.put(current_data, 3, self.combine_bytes_to_word(raw_values[5], raw_values[4]))
-            np.put(current_data, 4, self.combine_bytes_to_word(raw_values[9], raw_values[8]))
-            np.put(current_data, 5, self.combine_bytes_to_word(raw_values[11], raw_values[10]))
-            np.put(current_data, 6, self.combine_bytes_to_word(raw_values[13], raw_values[12]))
-            
-            self.data = np.vstack((self.data, [current_data]))
+            self.raw_data[timestamp] = raw_values.copy()
 
-        # Write measurement to file.
-        self.data_logger.write_measurements_to_file(self.data, self.name, self.data_header)
-        # Reset internal data for next measurement.
-        self.data = np.delete(arr=self.data, obj=np.s_[:])
-        
+        self.postprocess_raw_data()
+        self.data_logger.write_measurements_to_file(np.array(self.data), self.name, self.data_header)
+        self.reset_internal_data()
+    
+    def postprocess_raw_data(self):
+        """
+            Takes the raw byte values and bring them into right order.
+            Store them in python list to write them to file.
+        """
+        current_data = [0] * self.measurement_count
+        for timestamp, raw_values in self.raw_data.items():
+            current_data[0] = timestamp
+            for idx in range(self.measurement_count-1):
+                current_data[idx+1] = self.combine_bytes_to_word(raw_values[idx*2+1], raw_values[idx*2])
+            self.data.append(current_data.copy())
+
     def combine_bytes_to_word(self, low, high):
         """Concate two bytes and convert to integer."""
         value = (high << 8) + low
@@ -60,3 +67,8 @@ class MPU6050Thread(BaseThread):
             return -((65535 - value) + 1)
         else:
             return value
+        
+    def reset_internal_data(self):
+        """Resets internal data for next measurement."""
+        self.raw_data.clear()
+        self.data.clear()
