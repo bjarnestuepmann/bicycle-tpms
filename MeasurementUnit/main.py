@@ -11,7 +11,7 @@ def main():
     terminated_event = Event()
 
     # Display
-    display = DisplayThread("DisplayThread", 
+    dsp = DisplayThread("DisplayThread", 
                             start_measurement_event,
                             terminated_event,
                             port=0,
@@ -64,7 +64,7 @@ def main():
                          )
 
     # Wheel Speed Sensor Thread
-    whl_spd_sensor = WheelSpeedSensorThread('WheelSpeed',
+    wss = WheelSpeedSensorThread('WheelSpeed',
                                          start_measurement_event,
                                          terminated_event,
                                          dl,
@@ -72,14 +72,14 @@ def main():
                                          21)
 
     # Start threads.
-    display.start()
+    dsp.start()
     dl.start()
     mpu_1.start()
     mpu_2.start()
     mpu_3.start()
     mpu_4.start()
     mpu_5.start()
-    whl_spd_sensor.start()
+    wss.start()
 
     try:
         duration = 60
@@ -96,14 +96,14 @@ def main():
         terminated_event.set()
     
     print("Wait for other threads!")
-    display.join()
+    dsp.join()
     dl.join()
     mpu_1.join()
     mpu_2.join()
     mpu_3.join()
     mpu_4.join()
     mpu_5.join()
-    whl_spd_sensor.join()
+    wss.join()
     print("Exit programm.")
 
 

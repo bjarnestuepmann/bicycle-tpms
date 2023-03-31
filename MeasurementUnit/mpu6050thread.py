@@ -28,7 +28,7 @@ class MPU6050Thread(BaseThread):
         self.bus.write_byte_data(self.address, 0x6b, 0)
         # Prepare internal data.
         self.measurement_count = 8
-        self.data_header = "timestamp,ACCEL_X,ACCEL_Y,ACCEL_Z,TEMP,GYRO_X,GYRO_Y,GYRO_Z"
+        self.data_header = "timestamp,RAW_ACCEL_X,RAW_ACCEL_Y,RAW_ACCEL_Z,RAW_TEMP,RAW_GYRO_X,RAW_GYRO_Y,RAW_GYRO_Z"
         self.raw_data = dict()
         self.data = []
 

@@ -90,9 +90,6 @@ while True:
   acceleration_xout = read_word(0x3b)  #reading accelerometer values
   acceleration_yout = read_word(0x3d)
   acceleration_zout = read_word(0x3f)
-#   acceleration_xout = bus.read_word_data(address, 0x3b)
-#   acceleration_yout = bus.read_word_data(address, 0x3d)
-#   acceleration_zout = bus.read_word_data(address, 0x3f)
 
   acceleration_xout_scaled = acceleration_xout / scale0_acceleration  #scaled accelerometer values
   acceleration_yout_scaled = acceleration_yout / scale0_acceleration
