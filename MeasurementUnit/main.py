@@ -82,7 +82,7 @@ def main():
     wss.start()
 
     try:
-        duration = 60
+        duration = 30
         print("Start measurement for " + str(duration) + " seconds.")
         start_measurement_event.set()
         sleep(duration)
