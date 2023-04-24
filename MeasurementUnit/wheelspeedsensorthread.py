@@ -7,7 +7,12 @@ import numpy as np
 
 class WheelSpeedSensorThread(BaseThread):
 
-    def __init__(self, name: str, start_measurement_event: Event, terminated_event: Event, data_logger: DataLogger, gpio_gnd: int, gpio_v: int):
+    def __init__(self, name: str, 
+                 start_measurement_event: Event, 
+                 terminated_event: Event, 
+                 data_logger: DataLogger, 
+                 gpio_gnd: int, 
+                 gpio_v: int):
         super().__init__(name, start_measurement_event, terminated_event)
 
         self.data_logger = data_logger

@@ -99,7 +99,6 @@ while True:
   print("x-axis: %.4f g" % acceleration_xout_scaled)
   print("y-axis: %.4f g" % acceleration_yout_scaled)
   print("z-axis: %.4f g" % acceleration_zout_scaled)
-  bus.read_block_data()
   print()
  
   print("Rotation:")

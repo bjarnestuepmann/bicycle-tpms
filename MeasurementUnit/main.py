@@ -2,6 +2,7 @@ from displaythread import DisplayThread
 from datalogger import DataLogger
 from mpu6050thread import MPU6050Thread
 from wheelspeedsensorthread import WheelSpeedSensorThread
+from airspythread import AirspyThread
 from threading import Event
 from time import sleep
 
@@ -11,14 +12,14 @@ def main():
     terminated_event = Event()
 
     # Display
-    dsp = DisplayThread("DisplayThread", 
-                            start_measurement_event,
-                            terminated_event,
-                            port=0,
-                            cs=0,
-                            dc=24,
-                            rst=25
-                            )
+    # dsp = DisplayThread("DisplayThread", 
+    #                         start_measurement_event,
+    #                         terminated_event,
+    #                         port=0,
+    #                         cs=0,
+    #                         dc=24,
+    #                         rst=25
+    #                         )
     # Data Logger
     dl = DataLogger("DataLogger",
                     start_measurement_event,
@@ -26,63 +27,71 @@ def main():
                     "/home/pi/Documents/iTPMS/MeasurementUnit/data"
                     )
 
-    # MPU6050
-    mpu_1 = MPU6050Thread("MPU_1",
-                          start_measurement_event,
-                          terminated_event,
-                          data_logger=dl,
-                          i2c_bus=5,
-                          address=0x68
-                         )
-    mpu_2 = MPU6050Thread("MPU_2",
-                          start_measurement_event,
-                          terminated_event,
-                          data_logger=dl,
-                          i2c_bus=5,
-                          address=0x69
-                         )
-    mpu_3 = MPU6050Thread("MPU_3",
-                          start_measurement_event,
-                          terminated_event,
-                          data_logger=dl,
-                          i2c_bus=3,
-                          address=0x68
-                         )
-    mpu_4 = MPU6050Thread("MPU_4",
-                          start_measurement_event,
-                          terminated_event,
-                          data_logger=dl,
-                          i2c_bus=3,
-                          address=0x69
-                         )
-    mpu_5 = MPU6050Thread("MPU_5",
-                          start_measurement_event,
-                          terminated_event,
-                          data_logger=dl,
-                          i2c_bus=4,
-                          address=0x68
-                         )
+    # # MPU6050
+    # mpu_1 = MPU6050Thread("MPU_1",
+    #                       start_measurement_event,
+    #                       terminated_event,
+    #                       data_logger=dl,
+    #                       i2c_bus=5,
+    #                       address=0x68
+    #                      )
+    # mpu_2 = MPU6050Thread("MPU_2",
+    #                       start_measurement_event,
+    #                       terminated_event,
+    #                       data_logger=dl,
+    #                       i2c_bus=5,
+    #                       address=0x69
+    #                      )
+    # mpu_3 = MPU6050Thread("MPU_3",
+    #                       start_measurement_event,
+    #                       terminated_event,
+    #                       data_logger=dl,
+    #                       i2c_bus=3,
+    #                       address=0x68
+    #                      )
+    # mpu_4 = MPU6050Thread("MPU_4",
+    #                       start_measurement_event,
+    #                       terminated_event,
+    #                       data_logger=dl,
+    #                       i2c_bus=3,
+    #                       address=0x69
+    #                      )
+    # mpu_5 = MPU6050Thread("MPU_5",
+    #                       start_measurement_event,
+    #                       terminated_event,
+    #                       data_logger=dl,
+    #                       i2c_bus=4,
+    #                       address=0x68
+    #                      )
 
-    # Wheel Speed Sensor Thread
-    wss = WheelSpeedSensorThread('WheelSpeed',
-                                         start_measurement_event,
-                                         terminated_event,
-                                         dl,
-                                         20,
-                                         21)
+    # # Wheel Speed Sensor Thread
+    # wss = WheelSpeedSensorThread('WheelSpeed',
+    #                                      start_measurement_event,
+    #                                      terminated_event,
+    #                                      dl,
+    #                                      20,
+    #                                      21)
+
+    air_front = AirspyThread("Airspy_front",
+                             start_measurement_event,
+                             terminated_event,
+                             dl,
+                             "d4:65:7f:6a:a3:10")
 
     # Start threads.
-    dsp.start()
+    # dsp.start()
     dl.start()
-    mpu_1.start()
-    mpu_2.start()
-    mpu_3.start()
-    mpu_4.start()
-    mpu_5.start()
-    wss.start()
+    # mpu_1.start()
+    # mpu_2.start()
+    # mpu_3.start()
+    # mpu_4.start()
+    # mpu_5.start()
+    # wss.start()
+    air_front.start()
+
 
     try:
-        duration = 30
+        duration = 10
         print("Start measurement for " + str(duration) + " seconds.")
         start_measurement_event.set()
         sleep(duration)
@@ -96,14 +105,15 @@ def main():
         terminated_event.set()
     
     print("Wait for other threads!")
-    dsp.join()
+    # dsp.join()
     dl.join()
-    mpu_1.join()
-    mpu_2.join()
-    mpu_3.join()
-    mpu_4.join()
-    mpu_5.join()
-    wss.join()
+    # mpu_1.join()
+    # mpu_2.join()
+    # mpu_3.join()
+    # mpu_4.join()
+    # mpu_5.join()
+    # wss.join()
+    air_front.join()
     print("Exit programm.")
 
 

@@ -24,7 +24,6 @@ def main():
     try:
         while True:
             config = gps_reader.get_config()
-            print(config.clk_h)
             cfg_screen.set_config(config)
             cfg_screen.refresh()
             sleep(1)

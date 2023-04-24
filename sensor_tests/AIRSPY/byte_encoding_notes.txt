@@ -1,0 +1,18 @@
+# little endian byte order -> little endian float
+
+MESSAGES: [...]1e0d
+-> Temperatur?
+[0:4] 19.1200008392334
+[0:4] 19.190000534057617
+[0:4] 18.979999542236328
+[0:4] 18.969999313354492
+
+-> Battery?
+[7:11] 45.0
+[7:11] 45.0
+[7:11] 47.0
+
+MESSAGES: d5c3[...] Binärer Punkt am Ende
+
+-> Druck
+[8:12] 262.9729919433594
