@@ -4,7 +4,7 @@ from datetime import datetime
 import serial
 
 port = '/dev/serial/by-id/'\
-        'usb-u-blox_AG_-_www.u-blox.com_R-if00'
+        'usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00'
 usb = serial.Serial(port,38400)
 ubr = UBXReader(usb, quitonerror=2)
 

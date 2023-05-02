@@ -31,10 +31,10 @@ def button_pressed_callback(channel):
         print(stamp + ": Unknown channel was triggered.")
 
 
-GPIO.add_event_detect(pin_A, GPIO.FALLING, callback=button_pressed_callback) 
-GPIO.add_event_detect(pin_B, GPIO.FALLING, callback=button_pressed_callback) 
-GPIO.add_event_detect(pin_C, GPIO.FALLING, callback=button_pressed_callback) 
-GPIO.add_event_detect(pin_D, GPIO.FALLING, callback=button_pressed_callback) 
+GPIO.add_event_detect(pin_A, GPIO.FALLING, callback=button_pressed_callback, bouncetime=300) 
+GPIO.add_event_detect(pin_B, GPIO.FALLING, callback=button_pressed_callback, bouncetime=300) 
+GPIO.add_event_detect(pin_C, GPIO.FALLING, callback=button_pressed_callback, bouncetime=300) 
+GPIO.add_event_detect(pin_D, GPIO.FALLING, callback=button_pressed_callback, bouncetime=300) 
 
 while True:
     try:
