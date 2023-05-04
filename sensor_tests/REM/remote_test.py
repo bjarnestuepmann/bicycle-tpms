@@ -10,9 +10,9 @@ pin_B= 12
 pin_C= 5
 pin_D= 6
 GPIO.setup(pin_A, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.setup(pin_B, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+# GPIO.setup(pin_B, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(pin_C, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.setup(pin_D, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+# GPIO.setup(pin_D, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 #############################################################
 
 
@@ -31,10 +31,11 @@ def button_pressed_callback(channel):
         print(stamp + ": Unknown channel was triggered.")
 
 
-GPIO.add_event_detect(pin_A, GPIO.FALLING, callback=button_pressed_callback, bouncetime=300) 
-GPIO.add_event_detect(pin_B, GPIO.FALLING, callback=button_pressed_callback, bouncetime=300) 
-GPIO.add_event_detect(pin_C, GPIO.FALLING, callback=button_pressed_callback, bouncetime=300) 
-GPIO.add_event_detect(pin_D, GPIO.FALLING, callback=button_pressed_callback, bouncetime=300) 
+debounce_time = 500
+GPIO.add_event_detect(pin_A, GPIO.FALLING, callback=button_pressed_callback, bouncetime=debounce_time) 
+# GPIO.add_event_detect(pin_B, GPIO.FALLING, callback=button_pressed_callback, bouncetime=debounce_time) 
+GPIO.add_event_detect(pin_C, GPIO.FALLING, callback=button_pressed_callback, bouncetime=debounce_time) 
+# GPIO.add_event_detect(pin_D, GPIO.FALLING, callback=button_pressed_callback, bouncetime=3debounce_time00) 
 
 while True:
     try:

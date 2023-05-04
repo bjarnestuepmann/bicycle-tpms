@@ -6,7 +6,7 @@ import RPi.GPIO as GPIO
 
 import ST7735
 
-disp = ST7735.ST7735(port=0, cs=0, dc=24, backlight=None, rst=25, width=128, height=160, rotation=270, invert=False)
+disp = ST7735.ST7735(port=0, cs=0, dc=9, backlight=None, rst=25, width=128, height=160, rotation=270, invert=False)
 
 WIDTH = disp.width
 HEIGHT = disp.height
@@ -33,3 +33,5 @@ for i in reversed(range(11)):
 	draw.text((WIDTH//2,HEIGHT//2), str(i), font=font_big, anchor="mm")
 	disp.display(img)
 	sleep(1)
+
+GPIO.cleanup()
