@@ -11,7 +11,7 @@ class BaseThread(Thread):
 
     def run(self):
         """Waiting for incoming control events and start associated fuctions"""
-        while(not self.terminated_event.is_set()):        
+        while(not self.terminated_event.is_set()):
             # wait for next measurement event
             self.start_measurement_event.wait(timeout=10)
             if self.start_measurement_event.is_set():
