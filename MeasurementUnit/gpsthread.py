@@ -1,12 +1,13 @@
-from basethread import BaseThread
-from datalogger import DataLogger
 from threading import Event
-
-from pyubx2 import UBXReader
 import serial
-
 import time
 from enum import IntEnum
+import logging
+
+from pyubx2 import UBXReader
+
+from basethread import BaseThread
+from datalogger import DataLogger
 
 class NavStatToIntConverter(IntEnum):
     NF = 0
@@ -53,7 +54,7 @@ class GPSThread(BaseThread):
             elif msg.identity == "NAV-PVT":
                 self._parse_nav_pvt_msg(temp_data, msg)
             else:
-                print("Unknown message type:", msg.identity)
+                logging.warning("Receive unknown message type:", msg.identity)
                 continue
             
             self.measurements.append(temp_data.copy())

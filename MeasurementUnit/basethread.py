@@ -1,4 +1,5 @@
 from threading import Thread, Event
+import logging
 
 class BaseThread(Thread):
 
@@ -15,7 +16,9 @@ class BaseThread(Thread):
             # wait for next measurement event
             self.start_measurement_event.wait(timeout=10)
             if self.start_measurement_event.is_set():
+                logging.info("Start measurement.")
                 self.measurement_loop()
+                logging.info("Finish measurement.")
         
         self.clean_up()
 

@@ -1,12 +1,14 @@
+from struct import unpack
+from time import time, sleep
+import logging
+
+from bluepy.btle import Peripheral, DefaultDelegate, ADDR_TYPE_RANDOM
+import numpy as np
+
 from basethread import BaseThread
 from threading import Event, Lock
 from datalogger import DataLogger
 
-from bluepy.btle import Peripheral, DefaultDelegate, ADDR_TYPE_RANDOM
-from struct import unpack
-from time import time, sleep
-
-import numpy as np
 
 class AirspyDelegate(DefaultDelegate):
     def __init__(self, data: dict):
@@ -43,7 +45,8 @@ class AirspyDelegate(DefaultDelegate):
                 self.data[time_sec]['bat'] = self._hex_word_to_float(hex_data[14:22])
             
             else:
-                print("Received invalid message.")
+                logging.warning("Receive invalid messages from sensor.")
+                
 
     def _hex_word_to_float(self, hex: str):
         """Convert 32-bit little endian hex value to float."""
@@ -77,12 +80,11 @@ class AirspyThread(BaseThread):
                 self.device.connect(address, ADDR_TYPE_RANDOM)
                 d = AirspyDelegate(self.data_dict)
                 self.device = self.device.withDelegate(d)
-                print(f'{self.name}: Connected.')
+                logging.info("Connected to sensor.")
                 connected = True
 
             except Exception as e:
-                print(f"{self.name}: Failed to connect to sensor - {e}.")
-                print("Try again in 3 seconds.")
+                logging.exception("Failed to connect to sensor. Try again in 3 seconds.")
                 sleep(3)
             
 
@@ -115,9 +117,9 @@ class AirspyThread(BaseThread):
         self.subscribe()
         while self.start_measurement_event.is_set():
             if self.device.waitForNotifications(1.5):
-                # handleNotification() was called
+                # handleNotification() was called asynchronousy.
                 continue
-            print(f"{self.name}: No data for 1.5 seconds...")
+            logging.info("No data for more than 1.5 seconds.")
         
         # Stop measurement.
         self.unsubscribe()

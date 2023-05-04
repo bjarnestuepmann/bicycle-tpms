@@ -1,4 +1,5 @@
 from threading import Event
+import logging
 
 import RPi.GPIO as GPIO 
 
@@ -39,7 +40,7 @@ class RemoteControlThread(BaseThread):
                 # Wait for stop measurement input.
                 GPIO.wait_for_edge(self.pinC, GPIO.FALLING, timeout=1000)
                 if GPIO.event_detected(self.pinC):
-                    print("Button C pressed.")
+                    logging.info("Button C was pressed.")
                     self.start_measurement_event.clear()
                     GPIO.remove_event_detect(self.pinC)
                     GPIO.add_event_detect(self.pinA, GPIO.FALLING)
@@ -48,7 +49,7 @@ class RemoteControlThread(BaseThread):
                 # Wait for start measurement input.
                 GPIO.wait_for_edge(self.pinA, GPIO.FALLING, timeout=1000)
                 if GPIO.event_detected(self.pinA):
-                    print("Button A pressed.")
+                    logging.info("Button A was pressed.")
                     self.start_measurement_event.set()
                     GPIO.remove_event_detect(self.pinA)
                     GPIO.add_event_detect(self.pinC, GPIO.FALLING)

@@ -1,5 +1,8 @@
 from threading import Event
-from time import sleep
+from time import sleep, time
+import logging
+import logging.handlers
+import sys
 
 from displaythread import DisplayThread
 from datalogger import DataLogger
@@ -9,7 +12,32 @@ from wheelspeedsensorthread import WheelSpeedSensorThread
 from airspythread import AirspyThread
 from gpsthread import GPSThread
 
+
+def config_logging():
+    log_file_dir = "/home/pi/Documents/iTPMS/MeasurementUnit/logs"
+    
+    root_logger = logging.getLogger()
+    root_logger.setLevel(logging.DEBUG)
+    log_formatter = logging.Formatter("%(asctime)s::%(levelname)s::%(threadName)s::%(message)s")
+
+    # Logging to File
+    rot_file_handler = logging.handlers.RotatingFileHandler(
+        filename=f"{log_file_dir}/measurement_unit.log",
+    )
+    rot_file_handler.setFormatter(log_formatter)
+    rot_file_handler.setLevel(logging.INFO)
+    root_logger.addHandler(rot_file_handler)
+    
+    # Logging to console.
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(log_formatter)
+    console_handler.setLevel(logging.DEBUG)
+    root_logger.addHandler(console_handler)
+
+
+
 def main():
+    config_logging()
 
     start_measurement_event = Event()
     terminated_event = Event()
@@ -21,12 +49,12 @@ def main():
         port=0, cs=0, dc=9, rst=25
     )
     
-    # Data Logger
-    dl = DataLogger(
-        "DataLogger",
-        start_measurement_event, terminated_event,
-        "/home/pi/Documents/iTPMS/MeasurementUnit/data"
-    )
+    # # Data Logger
+    # dl = DataLogger(
+    #     "DataLogger",
+    #     start_measurement_event, terminated_event,
+    #     "/home/pi/Documents/iTPMS/MeasurementUnit/data"
+    # )
     
     # Remote Controller
     rmt_ctr_thread = RemoteControlThread(
@@ -94,9 +122,10 @@ def main():
     #                     '/dev/serial/by-id/'\
     #                         'usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00')
 
+    logging.info("Start all threads.")
     # Start threads.
     dsp.start()
-    dl.start()
+    # dl.start()
     rmt_ctr_thread.start()
     # mpu_1.start()
     # mpu_2.start()
@@ -115,16 +144,16 @@ def main():
             sleep(1)
 
     except KeyboardInterrupt:
-        print(": Terminated by User")
+        logging.info("Terminated by user.")
 
     finally:
-        print("Stop measurement.")
         start_measurement_event.clear()
         terminated_event.set()
     
-    print("Wait for other threads!")
+    logging.info("Wait for other threads.")
+    
     dsp.join()
-    dl.join()
+    # dl.join()
     rmt_ctr_thread.join()
     # mpu_1.join()
     # mpu_2.join()
@@ -135,7 +164,7 @@ def main():
     # air_front.join()
     # gps_ref.join()
     # gps_imu.join()
-    print("Exit programm.")
+    logging.info("Exit programm.")
 
 
 if __name__ == '__main__':

@@ -1,8 +1,11 @@
-from basethread import BaseThread
 from threading import Event, Lock
 import os
 import time
+import logging
+
 import numpy as np
+
+from basethread import BaseThread
 
 class DataLogger(BaseThread):
 
@@ -29,7 +32,7 @@ class DataLogger(BaseThread):
         try:
             os.makedirs(self.current_dir)
         except FileExistsError:
-            print("Directory '", self.current_dir , "' already exists.")
+            logging.exception("Directory '", self.current_dir , "' already exists.")
         finally:
             # Folder must be created only once per measurement. 
             # Check every second if the measurement is still running.
@@ -47,3 +50,5 @@ class DataLogger(BaseThread):
             file_name = device_name + "_" + self.current_timestr + ".csv"
             file_path = self.current_dir + "/" + file_name
             np.savetxt(file_path, data, header=csv_header, delimiter=",", comments="")
+            logging.info(f"Write {len(data)} measurements to file.")
+            
