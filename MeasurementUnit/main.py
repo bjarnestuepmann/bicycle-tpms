@@ -1,4 +1,4 @@
-from threading import Event
+from threading import Event, current_thread
 from time import sleep, time
 import logging
 import logging.handlers
@@ -15,6 +15,7 @@ from gpsthread import GPSThread
 
 def config_logging():
     log_file_dir = "/home/pi/Documents/iTPMS/MeasurementUnit/logs"
+    log_file_name = f"{log_file_dir}/measurement_unit.log"
     
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.DEBUG)
@@ -22,7 +23,7 @@ def config_logging():
 
     # Logging to File
     rot_file_handler = logging.handlers.RotatingFileHandler(
-        filename=f"{log_file_dir}/measurement_unit.log",
+        filename=log_file_name,
     )
     rot_file_handler.setFormatter(log_formatter)
     rot_file_handler.setLevel(logging.INFO)
@@ -33,28 +34,34 @@ def config_logging():
     console_handler.setFormatter(log_formatter)
     console_handler.setLevel(logging.DEBUG)
     root_logger.addHandler(console_handler)
-
+    
+    rot_file_handler.createLock()
+    return (log_file_name, rot_file_handler)
 
 
 def main():
-    config_logging()
+    # Set thread name.
+    this_thread = current_thread()
+    this_thread.name = "main"
+    
+    (log_file_name, log_file_lock) = config_logging()
 
     start_measurement_event = Event()
     terminated_event = Event()
 
-    # Display
     dsp = DisplayThread(
         "DisplayThread", 
         start_measurement_event, terminated_event,
         port=0, cs=0, dc=9, rst=25
     )
+    dsp.start()
     
-    # # Data Logger
-    # dl = DataLogger(
-    #     "DataLogger",
-    #     start_measurement_event, terminated_event,
-    #     "/home/pi/Documents/iTPMS/MeasurementUnit/data"
-    # )
+    # Data Logger
+    dl = DataLogger(
+        "DataLogger",
+        start_measurement_event, terminated_event,
+        "/home/pi/Documents/iTPMS/MeasurementUnit/data"
+    )
     
     # Remote Controller
     rmt_ctr_thread = RemoteControlThread(
@@ -104,11 +111,11 @@ def main():
     #         gpio_v=21
     # )
 
-    # air_front = AirspyThread("Airspy_front",
-    #                          start_measurement_event,
-    #                          terminated_event,
-    #                          dl,
-    #                          "d4:65:7f:6a:a3:10")
+    air_front = AirspyThread("Airspy_front",
+                             start_measurement_event,
+                             terminated_event,
+                             dl,
+                             "d4:65:7f:6a:a3:10")
 
     # gps_ref = GPSThread("GpsRef",
     #                     start_measurement_event,
@@ -124,8 +131,7 @@ def main():
 
     logging.info("Start all threads.")
     # Start threads.
-    dsp.start()
-    # dl.start()
+    dl.start()
     rmt_ctr_thread.start()
     # mpu_1.start()
     # mpu_2.start()
@@ -133,7 +139,7 @@ def main():
     # mpu_4.start()
     # mpu_5.start()
     # wss.start()
-    # air_front.start()
+    air_front.start()
     # gps_ref.start()
     # gps_imu.start()
 
@@ -151,9 +157,8 @@ def main():
         terminated_event.set()
     
     logging.info("Wait for other threads.")
-    
     dsp.join()
-    # dl.join()
+    dl.join()
     rmt_ctr_thread.join()
     # mpu_1.join()
     # mpu_2.join()
@@ -161,7 +166,7 @@ def main():
     # mpu_4.join()
     # mpu_5.join()
     # wss.join()
-    # air_front.join()
+    air_front.join()
     # gps_ref.join()
     # gps_imu.join()
     logging.info("Exit programm.")

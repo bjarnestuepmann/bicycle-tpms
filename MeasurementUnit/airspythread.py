@@ -69,14 +69,19 @@ class AirspyThread(BaseThread):
         self.data_dict = dict()
         self.data_list = list()
         self.device = Peripheral()
+        self.address = address
 
-        self.connect(address)
+    def run(self):
+        """Try to connect, when the thread starts."""
+        self.connect(self.address)
+        super(AirspyThread, self).run()
 
     def connect(self, address: str):
         """Setup Bluetooth Low Energy connection to AIRSPY sensor."""
         connected = False
-        while not connected:
+        while not connected and (not self.terminated_event.is_set()):
             try:
+                logging.debug("Try to connect to sensor.")
                 self.device.connect(address, ADDR_TYPE_RANDOM)
                 d = AirspyDelegate(self.data_dict)
                 self.device = self.device.withDelegate(d)
@@ -84,7 +89,7 @@ class AirspyThread(BaseThread):
                 connected = True
 
             except Exception as e:
-                logging.exception("Failed to connect to sensor. Try again in 3 seconds.")
+                logging.warning("Failed to connect to sensor. Try again in 3 seconds.")
                 sleep(3)
             
 
@@ -149,6 +154,6 @@ class AirspyThread(BaseThread):
 
     def clean_up(self):
         """Disconnect from sensor, before this thread terminates."""
-        print(f'{self.name}: Disconnect.')
+        logging.info('Disconnect.')
         self.disconnect()
 
