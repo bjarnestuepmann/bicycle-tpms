@@ -35,7 +35,7 @@ class GPSThread(BaseThread):
     
     def _connect(self, port):
         """Set up connection to GPS sensor."""
-        usb = serial.Serial(port,38400)
+        usb = serial.Serial(port, 38400)
         self.ubr = UBXReader(usb, protfilter=1) # only NMEA messages
 
     def measurement_loop(self):
@@ -44,36 +44,36 @@ class GPSThread(BaseThread):
             After stopping the measurement, this function saves the data
             permanently to file.
         """
-        # temp_data ->  [timestamp, lon, lat, sog, status, numSV]
-        temp_data = [-1] * 6
+        # measurement ->  [timestamp, lon, lat, sog, status, numSV]
+        measurement = [-1] * 6
         while self.start_measurement_event.is_set():
             (raw_data, msg) = self.ubr.read()
-            temp_data[0] = time.time()
+            measurement[0] = time.time()
             if msg.identity == "PUBX00":
-                self._parse_pubx00_msg(temp_data, msg)
+                self._parse_pubx00_msg(measurement, msg)
             elif msg.identity == "NAV-PVT":
-                self._parse_nav_pvt_msg(temp_data, msg)
+                self._parse_nav_pvt_msg(measurement, msg)
             else:
                 logging.warning("Receive unknown message type:", msg.identity)
                 continue
             
-            self.measurements.append(temp_data.copy())
+            self.measurements.append(measurement.copy())
 
         self._write_data_to_file()
         self.measurements = list()
 
-    def _parse_pubx00_msg(self, temp_data, msg):
+    def _parse_pubx00_msg(self, measurement, msg):
         """Parse required values from msg into internal list."""
-        # temp_data -> [timestamp, lon, lat, sog, status, numSV]
-        temp_data[1] = msg.lon
-        temp_data[2] = msg.lat
-        temp_data[3] = msg.SOG
-        temp_data[4] = int(NavStatToIntConverter[msg.navStat])
-        temp_data[5] = msg.numSVs
+        # measurement -> [timestamp, lon, lat, sog, status, numSV]
+        measurement[1] = msg.lon
+        measurement[2] = msg.lat
+        measurement[3] = msg.SOG
+        measurement[4] = int(NavStatToIntConverter[msg.navStat])
+        measurement[5] = msg.numSVs
 
-    def _parse_nav_pvt_msg(self, temp_data, msg):
+    def _parse_nav_pvt_msg(self, measurement, msg):
         """Parse required values from msg into internal list."""
-        # temp_data -> [timestamp, lon, lat, sog, status, numSV]
+        # measurement -> [timestamp, lon, lat, sog, status, numSV]
         pass
 
     def _write_data_to_file(self):
