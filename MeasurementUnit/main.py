@@ -34,9 +34,6 @@ def config_logging():
     console_handler.setFormatter(log_formatter)
     console_handler.setLevel(logging.DEBUG)
     root_logger.addHandler(console_handler)
-    
-    rot_file_handler.createLock()
-    return (log_file_name, rot_file_handler)
 
 
 def main():
@@ -44,16 +41,18 @@ def main():
     this_thread = current_thread()
     this_thread.name = "main"
     
-    (log_file_name, log_file_lock) = config_logging()
+    config_logging()
 
     start_measurement_event = Event()
     terminated_event = Event()
 
+    threads = list()
     dsp = DisplayThread(
         "DisplayThread", 
         start_measurement_event, terminated_event,
         port=0, cs=0, dc=9, rst=25
     )
+    threads.append(dsp)
     dsp.start()
     
     # Data Logger
@@ -62,6 +61,8 @@ def main():
         start_measurement_event, terminated_event,
         "/home/pi/Documents/iTPMS/MeasurementUnit/data"
     )
+    threads.append(dl)
+    dl.start()
     
     # Remote Controller
     rmt_ctr_thread = RemoteControlThread(
@@ -69,6 +70,8 @@ def main():
         start_measurement_event, terminated_event,
         pinA= 13, pinB= 12, pinC= 5, pinD= 6
     )
+    threads.append(rmt_ctr_thread)
+    rmt_ctr_thread.start()
 
     # MPU6050
     # mpu_1 = MPU6050Thread(
@@ -77,30 +80,44 @@ def main():
     #     data_logger=dl,
     #     i2c_bus=5, address=0x68
     # )
+    # threads.append(mpu_1)
+    # mpu_1.start()
+
     # mpu_2 = MPU6050Thread(
     #     "MPU_2",
     #     start_measurement_event, terminated_event,
     #     data_logger=dl,
     #     i2c_bus=5, address=0x69
     # )
+    # threads.append(mpu_2)
+    # mpu_2.start()
+
     # mpu_3 = MPU6050Thread(
     #     "MPU_3",
     #     start_measurement_event, terminated_event,
     #     data_logger=dl,
     #     i2c_bus=3, address=0x68
     # )
+    # threads.append(mpu_3)
+    # mpu_3.start()
+
     # mpu_4 = MPU6050Thread(
     #     "MPU_4",
     #     start_measurement_event, terminated_event,
     #     data_logger=dl,
     #     i2c_bus=3, address=0x69
     # )
+    # threads.append(mpu_4)
+    # mpu_4.start()
+
     # mpu_5 = MPU6050Thread(
     #     "MPU_5",
     #     start_measurement_event, terminated_event,
     #     data_logger=dl,
     #     i2c_bus=4, address=0x68
     # )
+    # threads.append(mpu_5)
+    # mpu_5.start()
 
     # Wheel Speed Sensor
     # wss = WheelSpeedSensorThread(
@@ -110,39 +127,37 @@ def main():
     #         gpio_gnd=20,
     #         gpio_v=21
     # )
+    # threads.append(wss)
+    # wss.start()
 
     air_front = AirspyThread("Airspy_front",
                              start_measurement_event,
                              terminated_event,
                              dl,
                              "d4:65:7f:6a:a3:10")
-
-    # gps_ref = GPSThread("GpsRef",
-    #                     start_measurement_event,
-    #                     terminated_event,
-    #                     dl,
-    #                     '/dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_R-if00')
-    # gps_imu = GPSThread("Gpsimu",
-    #                     start_measurement_event,
-    #                     terminated_event,
-    #                     dl,
-    #                     '/dev/serial/by-id/'\
-    #                         'usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00')
-
-    logging.info("Start all threads.")
-    # Start threads.
-    dl.start()
-    rmt_ctr_thread.start()
-    # mpu_1.start()
-    # mpu_2.start()
-    # mpu_3.start()
-    # mpu_4.start()
-    # mpu_5.start()
-    # wss.start()
+    threads.append(air_front)
     air_front.start()
-    # gps_ref.start()
-    # gps_imu.start()
 
+    # gps_ref = GPSThread(
+    #     "GpsRef",
+    #     start_measurement_event,
+    #     terminated_event,
+    #     dl,
+    #     '/dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_R-if00')
+    # threads.append(gps_ref)
+    # gps_ref.start()
+
+    # gps_imu = GPSThread(
+    #     "Gpsimu",
+    #     start_measurement_event,
+    #     terminated_event,
+    #     dl,
+    #     '/dev/serial/by-id/'\
+    #         'usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00')
+    # threads.append(gps_imu)
+    # gps_imu.start()
+    
+    logging.info(f"{len(threads)} threads are started.")
 
     try:
         # Wait for keyboard interrupt.
@@ -157,18 +172,9 @@ def main():
         terminated_event.set()
     
     logging.info("Wait for other threads.")
-    dsp.join()
-    dl.join()
-    rmt_ctr_thread.join()
-    # mpu_1.join()
-    # mpu_2.join()
-    # mpu_3.join()
-    # mpu_4.join()
-    # mpu_5.join()
-    # wss.join()
-    air_front.join()
-    # gps_ref.join()
-    # gps_imu.join()
+    for thread in threads:
+        thread.wait()
+    
     logging.info("Exit programm.")
 
 
