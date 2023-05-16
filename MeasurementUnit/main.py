@@ -7,10 +7,10 @@ import sys
 from displaythread import DisplayThread
 from datalogger import DataLogger
 from remotecontrolthread import RemoteControlThread
-from mpu6050thread import MPU6050Thread
-from wheelspeedsensorthread import WheelSpeedSensorThread
-from airspythread import AirspyThread
-from gpsthread import GPSThread
+from mpu6050thread import ImuReader
+from wheelspeedsensorthread import WheelSpeedSensorReader
+from airspythread import AirspyReader
+from gpsthread import GpsReader
 
 
 def config_logging():
@@ -48,7 +48,7 @@ def main():
 
     threads = list()
     dsp = DisplayThread(
-        "DisplayThread", 
+        "display", 
         start_measurement_event, terminated_event,
         port=0, cs=0, dc=9, rst=25
     )
@@ -57,7 +57,7 @@ def main():
     
     # Data Logger
     dl = DataLogger(
-        "DataLogger",
+        "datalogger",
         start_measurement_event, terminated_event,
         "/home/pi/Documents/iTPMS/MeasurementUnit/data"
     )
@@ -66,7 +66,7 @@ def main():
     
     # Remote Controller
     rmt_ctr_thread = RemoteControlThread(
-        "RemoteControlThread",
+        "remote_ctr",
         start_measurement_event, terminated_event,
         pinA= 13, pinB= 12, pinC= 5, pinD= 6
     )
@@ -74,72 +74,106 @@ def main():
     rmt_ctr_thread.start()
 
     # MPU6050
-    # mpu_1 = MPU6050Thread(
-    #     "MPU_1",
-    #     start_measurement_event, terminated_event,
-    #     data_logger=dl,
-    #     i2c_bus=5, address=0x68
-    # )
-    # threads.append(mpu_1)
-    # mpu_1.start()
+    mpu_1 = ImuReader(
+        "imu1",
+        start_measurement_event, terminated_event,
+        data_logger=dl,
+        i2c_bus=5, address=0x68
+    )
+    threads.append(mpu_1)
+    mpu_1.start()
 
-    # mpu_2 = MPU6050Thread(
-    #     "MPU_2",
-    #     start_measurement_event, terminated_event,
-    #     data_logger=dl,
-    #     i2c_bus=5, address=0x69
-    # )
-    # threads.append(mpu_2)
-    # mpu_2.start()
+    mpu_2 = ImuReader(
+        "imu2",
+        start_measurement_event, terminated_event,
+        data_logger=dl,
+        i2c_bus=5, address=0x69
+    )
+    threads.append(mpu_2)
+    mpu_2.start()
 
-    # mpu_3 = MPU6050Thread(
-    #     "MPU_3",
-    #     start_measurement_event, terminated_event,
-    #     data_logger=dl,
-    #     i2c_bus=3, address=0x68
-    # )
-    # threads.append(mpu_3)
-    # mpu_3.start()
+    mpu_3 = ImuReader(
+        "imu3",
+        start_measurement_event, terminated_event,
+        data_logger=dl,
+        i2c_bus=3, address=0x68
+    )
+    threads.append(mpu_3)
+    mpu_3.start()
 
-    # mpu_4 = MPU6050Thread(
-    #     "MPU_4",
-    #     start_measurement_event, terminated_event,
-    #     data_logger=dl,
-    #     i2c_bus=3, address=0x69
-    # )
-    # threads.append(mpu_4)
-    # mpu_4.start()
+    mpu_4 = ImuReader(
+        "imu4",
+        start_measurement_event, terminated_event,
+        data_logger=dl,
+        i2c_bus=3, address=0x69
+    )
+    threads.append(mpu_4)
+    mpu_4.start()
 
-    # mpu_5 = MPU6050Thread(
-    #     "MPU_5",
-    #     start_measurement_event, terminated_event,
-    #     data_logger=dl,
-    #     i2c_bus=4, address=0x68
-    # )
-    # threads.append(mpu_5)
-    # mpu_5.start()
+    mpu_5 = ImuReader(
+        "imu5",
+        start_measurement_event, terminated_event,
+        data_logger=dl,
+        i2c_bus=4, address=0x68
+    )
+    threads.append(mpu_5)
+    mpu_5.start()
+
+    mpu_6 = ImuReader(
+        "imu6",
+        start_measurement_event, terminated_event,
+        data_logger=dl,
+        i2c_bus=4, address=0x69
+    )
+    threads.append(mpu_6)
+    mpu_6.start()
+    
+    mpu_7 = ImuReader(
+        "imu7",
+        start_measurement_event, terminated_event,
+        data_logger=dl,
+        i2c_bus=6, address=0x68
+    )
+    threads.append(mpu_7)
+    mpu_7.start()
 
     # Wheel Speed Sensor
-    # wss = WheelSpeedSensorThread(
-    #         'WheelSpeed',
-    #         start_measurement_event, terminated_event,
-    #         data_logger=dl,
-    #         gpio_gnd=20,
-    #         gpio_v=21
-    # )
-    # threads.append(wss)
-    # wss.start()
+    ws_front = WheelSpeedSensorReader(
+            'ws_front',
+            start_measurement_event, terminated_event,
+            data_logger=dl,
+            gpio_signal_pin=3
+    )
+    threads.append(ws_front)
+    ws_front.start()
 
-    air_front = AirspyThread("Airspy_front",
-                             start_measurement_event,
-                             terminated_event,
-                             dl,
-                             "d4:65:7f:6a:a3:10")
-    threads.append(air_front)
-    air_front.start()
+    ws_rear = WheelSpeedSensorReader(
+            'ws_rear',
+            start_measurement_event, terminated_event,
+            data_logger=dl,
+            gpio_signal_pin=2
+    )
+    threads.append(ws_rear)
+    ws_rear.start()
 
-    # gps_ref = GPSThread(
-    #     "GpsRef",
+    # air_front = AirspyReader("Airspy_front",
+    #                          start_measurement_event,
+    #                          terminated_event,
+    #                          dl,
+    #                          "d4:65:7f:6a:a3:10")
+    # threads.append(air_front)
+    # air_front.start()
+    
+    # air_rear = AirspyReader("Airspy_rear",
+    #                          start_measurement_event,
+    #                          terminated_event,
+    #                          dl,
+    #                          "ee:0d:0c:41:30:be")
+    # threads.append(air_rear)
+    # air_rear.start()
+
+    # gps_ref = GpsReader(
+    #     "gps_ref",
     #     start_measurement_event,
     #     terminated_event,
     #     dl,
@@ -147,8 +181,8 @@ def main():
     # threads.append(gps_ref)
     # gps_ref.start()
 
-    # gps_imu = GPSThread(
-    #     "Gpsimu",
+    # gps_imu = GpsReader(
+    #     "gps_imu",
     #     start_measurement_event,
     #     terminated_event,
     #     dl,
@@ -173,7 +207,7 @@ def main():
     
     logging.info("Wait for other threads.")
     for thread in threads:
-        thread.wait()
+        thread.join()
     
     logging.info("Exit programm.")
 

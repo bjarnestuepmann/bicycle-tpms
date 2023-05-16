@@ -5,28 +5,25 @@ import logging
 
 import numpy as np
 
-from basethread import BaseThread
+from measurementunitcomponent import MeasurementUnitComponent
 
-class DataLogger(BaseThread):
+class DataLogger(MeasurementUnitComponent):
 
     def __init__(self, name: str, start_measurement_event: Event, terminated_event: Event, dir: str):
         super(DataLogger, self).__init__(name, start_measurement_event, terminated_event)
         
         self.dir = dir
 
-        # initialize
         self.lock = Lock()
-        # Check if Folder already exist, otherwise create new one.
+        # Check if data directory already exist, otherwise create new one.
         if not os.path.isdir(self.dir):
             os.makedirs(self.dir)
 
     def measurement_loop(self):
-        """ 
-            Create new directory for current measurement
-            and prepare internal variables for incoming 
-            write_measurements_to_file calls.
-        """
-        # Create new folder with current timestamp.
+        """ Create new directory for current measurement
+        and prepare internal variables for incoming 
+        write_measurements_to_file calls."""
+        # Create new folder for measurement with current timestamp.
         self.current_timestr = time.strftime("%Y%m%d-%H%M%S")
         self.current_dir = self.dir + "/" + self.current_timestr
         try:

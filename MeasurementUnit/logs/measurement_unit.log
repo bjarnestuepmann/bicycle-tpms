@@ -235,3 +235,1116 @@ bluepy.btle.BTLEDisconnectError: Failed to connect to peripheral d4:65:7f:6a:a3:
 2023-05-09 13:00:04,871::INFO::main::Wait for other threads.
 2023-05-09 13:00:30,452::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
 2023-05-09 13:00:33,457::INFO::main::Exit programm.
+2023-05-09 14:45:19,810::INFO::main::4 threads are started.
+2023-05-09 14:45:50,423::INFO::main::Terminated by user.
+2023-05-09 14:45:50,614::INFO::main::Wait for other threads.
+2023-05-09 14:46:00,692::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 14:46:03,696::INFO::Airspy_front::Disconnect.
+2023-05-09 14:46:44,370::INFO::main::4 threads are started.
+2023-05-09 14:46:54,321::INFO::main::Terminated by user.
+2023-05-09 14:46:54,505::INFO::main::Wait for other threads.
+2023-05-09 14:47:25,173::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 14:47:28,176::INFO::Airspy_front::Disconnect.
+2023-05-09 14:47:28,177::INFO::main::Exit programm.
+2023-05-09 14:50:02,320::INFO::DataLogger::Ready to start measurement.
+2023-05-09 14:50:02,372::INFO::main::4 threads are started.
+2023-05-09 14:50:43,573::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 14:51:27,101::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 14:51:33,929::INFO::main::Terminated by user.
+2023-05-09 14:51:34,035::INFO::main::Wait for other threads.
+2023-05-09 14:51:34,339::INFO::DisplayThread::Ready to start measurement.
+2023-05-09 14:52:10,612::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 14:52:13,616::INFO::Airspy_front::Ready to start measurement.
+2023-05-09 14:52:13,617::INFO::Airspy_front::Disconnect.
+2023-05-09 14:52:13,617::INFO::main::Exit programm.
+2023-05-09 14:55:35,699::INFO::DataLogger::Ready to start measurement.
+2023-05-09 14:55:35,702::INFO::RemoteControlThread::Ready to receive input.
+2023-05-09 14:55:35,704::INFO::main::4 threads are started.
+2023-05-09 14:56:42,942::INFO::main::Terminated by user.
+2023-05-09 14:56:43,133::INFO::main::Wait for other threads.
+2023-05-09 14:56:43,713::INFO::DisplayThread::Ready to start measurement.
+2023-05-09 14:56:45,885::INFO::main::Exit programm.
+2023-05-09 14:59:10,800::INFO::DataLogger::Ready to start measurement.
+2023-05-09 14:59:10,802::INFO::RemoteControlThread::Ready to receive input.
+2023-05-09 14:59:10,803::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 14:59:10,810::INFO::main::4 threads are started.
+2023-05-09 14:59:52,053::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 14:59:55,238::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:00:35,571::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:00:38,679::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:01:19,092::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:01:22,298::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:02:02,613::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:02:05,815::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:02:46,132::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:02:49,334::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:03:29,652::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:03:32,857::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:04:13,172::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:04:16,350::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:04:56,692::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:04:59,844::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:05:40,212::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:05:43,367::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:06:23,732::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:06:26,887::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:07:07,253::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:07:10,407::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:07:50,772::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:07:53,978::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:08:34,292::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:08:37,501::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:09:17,812::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:09:20,989::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:10:01,332::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:10:04,536::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:10:44,852::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:10:48,025::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:11:28,372::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:11:31,576::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:12:11,893::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:12:15,058::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:12:55,422::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:12:58,589::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:13:38,932::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:13:42,089::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:14:22,452::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:14:25,663::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:15:05,972::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:15:09,129::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:15:49,492::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:15:52,677::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:16:33,012::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:16:36,193::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:17:16,533::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:17:19,691::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:18:00,053::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:18:03,258::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:18:43,573::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:18:46,776::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:19:27,092::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:19:30,271::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:20:10,612::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:20:13,790::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:20:54,132::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:20:57,339::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:21:37,653::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:21:40,813::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:22:21,172::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:22:24,378::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:23:04,693::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:23:07,858::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:23:27,255::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:23:30,463::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:23:54,855::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:23:58,038::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:24:38,772::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:24:41,980::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:25:01,416::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:25:04,592::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:25:27,971::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:25:31,089::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:25:37,461::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:25:40,580::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:25:48,958::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:25:52,077::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:25:59,736::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:26:02,912::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:26:34,855::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:26:38,061::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:27:18,772::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:27:21,951::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:27:25,233::INFO::main::Terminated by user.
+2023-05-09 15:27:25,347::INFO::main::Wait for other threads.
+2023-05-09 15:27:26,187::INFO::DisplayThread::Ready to start measurement.
+2023-05-09 15:27:28,773::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:27:31,777::INFO::main::Exit programm.
+2023-05-09 15:37:20,497::INFO::DataLogger::Ready to start measurement.
+2023-05-09 15:37:20,498::INFO::RemoteControlThread::Ready to receive input.
+2023-05-09 15:37:20,499::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:37:20,505::INFO::main::4 threads are started.
+2023-05-09 15:38:01,973::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:38:05,154::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:38:45,491::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:38:48,606::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:39:29,012::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:39:32,163::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:40:12,531::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:40:15,647::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:40:56,053::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:40:59,257::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:41:39,572::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:41:42,751::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:42:23,093::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:42:26,267::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:43:06,612::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:43:09,767::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:43:50,133::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:43:53,339::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:44:33,653::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:44:36,862::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:45:17,173::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:45:20,334::INFO::Airspy_front::Try to connect to sensor.
+2023-05-09 15:45:47,742::INFO::main::Terminated by user.
+2023-05-09 15:45:47,898::INFO::main::Wait for other threads.
+2023-05-09 15:45:48,605::INFO::DisplayThread::Ready to start measurement.
+2023-05-09 15:46:00,692::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-09 15:46:03,696::INFO::main::Exit programm.
+2023-05-10 13:13:14,124::INFO::DataLogger::Ready to start measurement.
+2023-05-10 13:13:14,125::INFO::RemoteControlThread::Ready to receive input.
+2023-05-10 13:13:14,126::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 13:13:14,126::INFO::main::4 threads are started.
+2023-05-10 13:13:19,423::INFO::Airspy_front::Connected to sensor.
+2023-05-10 13:13:19,523::INFO::Airspy_front::Ready to start measurement.
+2023-05-10 13:14:22,344::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 13:14:22,594::INFO::DataLogger::Start measurement.
+2023-05-10 13:14:22,605::INFO::DisplayThread::Ready to start measurement.
+2023-05-10 13:14:22,606::INFO::Airspy_front::Start measurement.
+2023-05-10 13:14:22,610::INFO::DisplayThread::Start measurement.
+2023-05-10 13:14:42,405::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 13:14:42,991::INFO::DisplayThread::Finish measurement.
+2023-05-10 13:14:43,017::INFO::DataLogger::Finish measurement.
+2023-05-10 13:14:43,299::INFO::Airspy_front::Write 21 measurements to file.
+2023-05-10 13:14:43,300::INFO::Airspy_front::Finish measurement.
+2023-05-10 13:15:29,507::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 13:15:29,551::INFO::DataLogger::Start measurement.
+2023-05-10 13:15:29,552::INFO::DisplayThread::Start measurement.
+2023-05-10 13:15:29,555::INFO::Airspy_front::Start measurement.
+2023-05-10 13:15:43,391::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 13:15:43,567::INFO::DataLogger::Finish measurement.
+2023-05-10 13:15:43,635::INFO::DisplayThread::Finish measurement.
+2023-05-10 13:15:44,287::INFO::Airspy_front::Write 0 measurements to file.
+2023-05-10 13:15:44,288::INFO::Airspy_front::Finish measurement.
+2023-05-10 13:16:06,850::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 13:16:06,894::INFO::Airspy_front::Start measurement.
+2023-05-10 13:16:06,894::INFO::DataLogger::Start measurement.
+2023-05-10 13:16:06,895::INFO::DisplayThread::Start measurement.
+2023-05-10 13:16:18,232::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 13:16:18,322::INFO::Airspy_front::Write 0 measurements to file.
+2023-05-10 13:16:18,323::INFO::Airspy_front::Finish measurement.
+2023-05-10 13:16:18,909::INFO::DataLogger::Finish measurement.
+2023-05-10 13:16:19,016::INFO::DisplayThread::Finish measurement.
+2023-05-10 13:16:40,860::INFO::main::Terminated by user.
+2023-05-10 13:16:40,861::INFO::main::Wait for other threads.
+2023-05-10 13:16:48,325::INFO::Airspy_front::Disconnect.
+2023-05-10 13:16:49,018::INFO::main::Exit programm.
+2023-05-10 16:43:53,264::INFO::DataLogger::Ready to start measurement.
+2023-05-10 16:43:53,265::INFO::RemoteControlThread::Ready to receive input.
+2023-05-10 16:43:53,267::INFO::MPU_1::Ready to start measurement.
+2023-05-10 16:43:53,280::INFO::MPU_2::Ready to start measurement.
+2023-05-10 16:43:53,283::INFO::MPU_3::Ready to start measurement.
+2023-05-10 16:43:53,289::INFO::MPU_4::Ready to start measurement.
+2023-05-10 16:43:53,293::INFO::MPU_5::Ready to start measurement.
+2023-05-10 16:43:53,301::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 16:43:53,303::INFO::main::9 threads are started.
+2023-05-10 16:44:17,688::INFO::main::Terminated by user.
+2023-05-10 16:44:17,881::INFO::main::Wait for other threads.
+2023-05-10 16:44:18,270::INFO::DisplayThread::Ready to start measurement.
+2023-05-10 16:44:35,042::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 16:44:38,046::INFO::main::Exit programm.
+2023-05-10 16:44:44,527::INFO::DataLogger::Ready to start measurement.
+2023-05-10 16:44:44,528::INFO::RemoteControlThread::Ready to receive input.
+2023-05-10 16:44:44,536::INFO::MPU_1::Ready to start measurement.
+2023-05-10 16:44:44,540::INFO::MPU_2::Ready to start measurement.
+2023-05-10 16:44:44,544::INFO::MPU_3::Ready to start measurement.
+2023-05-10 16:44:44,550::INFO::MPU_4::Ready to start measurement.
+2023-05-10 16:44:44,555::INFO::MPU_5::Ready to start measurement.
+2023-05-10 16:44:44,562::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 16:44:44,563::INFO::main::9 threads are started.
+2023-05-10 16:45:21,157::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 16:45:21,319::INFO::MPU_2::Start measurement.
+2023-05-10 16:45:21,319::INFO::MPU_3::Start measurement.
+2023-05-10 16:45:21,319::INFO::MPU_1::Start measurement.
+2023-05-10 16:45:21,320::INFO::DisplayThread::Ready to start measurement.
+2023-05-10 16:45:21,320::INFO::MPU_4::Start measurement.
+2023-05-10 16:45:21,320::INFO::MPU_5::Start measurement.
+2023-05-10 16:45:21,320::INFO::DataLogger::Start measurement.
+2023-05-10 16:45:21,327::INFO::DisplayThread::Start measurement.
+2023-05-10 16:45:22,480::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 16:45:22,604::INFO::MPU_4::Write 734 measurements to file.
+2023-05-10 16:45:22,605::INFO::MPU_4::Finish measurement.
+2023-05-10 16:45:22,623::INFO::MPU_1::Write 756 measurements to file.
+2023-05-10 16:45:22,624::INFO::MPU_1::Finish measurement.
+2023-05-10 16:45:22,645::INFO::MPU_3::Write 751 measurements to file.
+2023-05-10 16:45:22,646::INFO::MPU_3::Finish measurement.
+2023-05-10 16:45:22,678::INFO::MPU_5::Write 1436 measurements to file.
+2023-05-10 16:45:22,680::INFO::MPU_5::Finish measurement.
+2023-05-10 16:45:22,698::INFO::MPU_2::Write 751 measurements to file.
+2023-05-10 16:45:22,699::INFO::MPU_2::Finish measurement.
+2023-05-10 16:45:23,216::INFO::DisplayThread::Finish measurement.
+2023-05-10 16:45:23,345::INFO::DataLogger::Finish measurement.
+2023-05-10 16:45:26,882::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 16:45:29,885::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 16:45:43,057::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 16:45:43,111::INFO::MPU_3::Start measurement.
+2023-05-10 16:45:43,112::INFO::MPU_2::Start measurement.
+2023-05-10 16:45:43,112::INFO::MPU_1::Start measurement.
+2023-05-10 16:45:43,113::INFO::DataLogger::Start measurement.
+2023-05-10 16:45:43,113::INFO::DisplayThread::Start measurement.
+2023-05-10 16:45:43,113::INFO::MPU_5::Start measurement.
+2023-05-10 16:45:43,114::INFO::MPU_4::Start measurement.
+2023-05-10 16:46:01,911::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 16:46:02,163::INFO::DataLogger::Finish measurement.
+2023-05-10 16:46:02,929::INFO::DisplayThread::Finish measurement.
+2023-05-10 16:46:03,604::INFO::MPU_3::Write 12718 measurements to file.
+2023-05-10 16:46:03,615::INFO::MPU_3::Finish measurement.
+2023-05-10 16:46:03,894::INFO::MPU_2::Write 12792 measurements to file.
+2023-05-10 16:46:03,906::INFO::MPU_2::Finish measurement.
+2023-05-10 16:46:04,179::INFO::MPU_4::Write 12704 measurements to file.
+2023-05-10 16:46:04,190::INFO::MPU_4::Finish measurement.
+2023-05-10 16:46:04,461::INFO::MPU_1::Write 12669 measurements to file.
+2023-05-10 16:46:04,476::INFO::MPU_1::Finish measurement.
+2023-05-10 16:46:04,974::INFO::MPU_5::Write 23617 measurements to file.
+2023-05-10 16:46:04,990::INFO::MPU_5::Finish measurement.
+2023-05-10 16:46:10,401::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 16:46:12,918::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 16:46:12,973::INFO::MPU_3::Start measurement.
+2023-05-10 16:46:12,974::INFO::MPU_2::Start measurement.
+2023-05-10 16:46:12,974::INFO::MPU_4::Start measurement.
+2023-05-10 16:46:12,975::INFO::DataLogger::Start measurement.
+2023-05-10 16:46:12,975::INFO::MPU_5::Start measurement.
+2023-05-10 16:46:12,977::INFO::DisplayThread::Start measurement.
+2023-05-10 16:46:12,986::INFO::MPU_1::Start measurement.
+2023-05-10 16:46:13,405::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 16:46:53,920::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 16:46:56,924::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 16:46:59,504::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 16:47:00,061::INFO::DataLogger::Finish measurement.
+2023-05-10 16:47:00,631::INFO::DisplayThread::Finish measurement.
+2023-05-10 16:47:03,436::INFO::MPU_2::Write 31604 measurements to file.
+2023-05-10 16:47:03,473::INFO::MPU_2::Finish measurement.
+2023-05-10 16:47:04,151::INFO::MPU_4::Write 31263 measurements to file.
+2023-05-10 16:47:04,177::INFO::MPU_4::Finish measurement.
+2023-05-10 16:47:04,852::INFO::MPU_1::Write 31610 measurements to file.
+2023-05-10 16:47:04,879::INFO::MPU_1::Finish measurement.
+2023-05-10 16:47:05,557::INFO::MPU_3::Write 31356 measurements to file.
+2023-05-10 16:47:05,583::INFO::MPU_3::Finish measurement.
+2023-05-10 16:47:06,811::INFO::MPU_5::Write 58722 measurements to file.
+2023-05-10 16:47:06,851::INFO::MPU_5::Finish measurement.
+2023-05-10 16:47:14,629::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 16:47:14,682::INFO::DataLogger::Start measurement.
+2023-05-10 16:47:14,683::INFO::MPU_1::Start measurement.
+2023-05-10 16:47:14,684::INFO::MPU_2::Start measurement.
+2023-05-10 16:47:14,685::INFO::MPU_3::Start measurement.
+2023-05-10 16:47:14,685::INFO::MPU_5::Start measurement.
+2023-05-10 16:47:14,685::INFO::DisplayThread::Start measurement.
+2023-05-10 16:47:14,686::INFO::MPU_4::Start measurement.
+2023-05-10 16:47:20,266::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 16:47:20,693::INFO::DataLogger::Finish measurement.
+2023-05-10 16:47:20,707::INFO::MPU_2::Write 3805 measurements to file.
+2023-05-10 16:47:20,711::INFO::MPU_2::Finish measurement.
+2023-05-10 16:47:20,794::INFO::MPU_4::Write 3741 measurements to file.
+2023-05-10 16:47:20,797::INFO::MPU_4::Finish measurement.
+2023-05-10 16:47:20,885::INFO::MPU_1::Write 3746 measurements to file.
+2023-05-10 16:47:20,888::INFO::MPU_1::Finish measurement.
+2023-05-10 16:47:20,971::INFO::MPU_3::Write 3803 measurements to file.
+2023-05-10 16:47:20,975::INFO::MPU_3::Finish measurement.
+2023-05-10 16:47:21,097::INFO::DisplayThread::Finish measurement.
+2023-05-10 16:47:21,192::INFO::MPU_5::Write 6929 measurements to file.
+2023-05-10 16:47:21,198::INFO::MPU_5::Finish measurement.
+2023-05-10 16:47:37,441::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 16:47:40,445::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 16:48:20,962::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 16:48:23,966::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 16:49:04,482::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 16:49:07,486::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 16:49:09,077::INFO::main::Terminated by user.
+2023-05-10 16:49:09,079::INFO::main::Wait for other threads.
+2023-05-10 16:49:48,002::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 16:49:51,006::INFO::main::Exit programm.
+2023-05-10 17:27:56,876::INFO::DataLogger::Ready to start measurement.
+2023-05-10 17:27:56,877::INFO::RemoteControlThread::Ready to receive input.
+2023-05-10 17:27:56,879::INFO::MPU_1::Ready to start measurement.
+2023-05-10 17:27:56,887::INFO::MPU_2::Ready to start measurement.
+2023-05-10 17:27:56,892::INFO::MPU_3::Ready to start measurement.
+2023-05-10 17:27:56,895::INFO::MPU_4::Ready to start measurement.
+2023-05-10 17:27:56,905::INFO::MPU_5::Ready to start measurement.
+2023-05-10 17:27:56,906::INFO::MPU_6::Ready to start measurement.
+2023-05-10 17:27:56,908::INFO::MPU_7::Ready to start measurement.
+2023-05-10 17:28:28,297::INFO::DataLogger::Ready to start measurement.
+2023-05-10 17:28:28,298::INFO::RemoteControlThread::Ready to receive input.
+2023-05-10 17:28:28,306::INFO::MPU_1::Ready to start measurement.
+2023-05-10 17:28:28,309::INFO::MPU_2::Ready to start measurement.
+2023-05-10 17:28:28,311::INFO::MPU_3::Ready to start measurement.
+2023-05-10 17:28:28,314::INFO::MPU_4::Ready to start measurement.
+2023-05-10 17:28:28,321::INFO::MPU_5::Ready to start measurement.
+2023-05-10 17:28:28,324::INFO::MPU_6::Ready to start measurement.
+2023-05-10 17:28:28,331::INFO::MPU_7::Ready to start measurement.
+2023-05-10 17:28:28,335::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-10 17:28:28,336::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-10 17:28:28,338::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 17:28:28,341::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:28:33,389::INFO::Gpsimu::Ready to start measurement.
+2023-05-10 17:28:33,390::INFO::main::15 threads are started.
+2023-05-10 17:28:40,589::INFO::Airspy_front::Connected to sensor.
+2023-05-10 17:28:40,701::INFO::Airspy_front::Ready to start measurement.
+2023-05-10 17:28:51,155::WARNING::Airspy_rear::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 17:28:54,327::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:28:58,539::INFO::Airspy_rear::Connected to sensor.
+2023-05-10 17:28:58,715::INFO::Airspy_rear::Ready to start measurement.
+2023-05-10 17:29:20,675::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 17:29:20,874::INFO::MPU_7::Start measurement.
+2023-05-10 17:29:20,879::INFO::MPU_1::Start measurement.
+2023-05-10 17:29:20,879::INFO::MPU_4::Start measurement.
+2023-05-10 17:29:20,879::INFO::DataLogger::Start measurement.
+2023-05-10 17:29:20,879::INFO::MPU_6::Start measurement.
+2023-05-10 17:29:20,880::INFO::MPU_2::Start measurement.
+2023-05-10 17:29:20,880::INFO::WheelSpeed_rear::Start measurement.
+2023-05-10 17:29:20,880::INFO::MPU_3::Start measurement.
+2023-05-10 17:29:20,880::INFO::MPU_5::Start measurement.
+2023-05-10 17:29:20,880::INFO::Gpsimu::Start measurement.
+2023-05-10 17:29:20,880::INFO::Airspy_front::Start measurement.
+2023-05-10 17:29:20,880::INFO::WheelSpeed_front::Start measurement.
+2023-05-10 17:29:20,881::INFO::DisplayThread::Ready to start measurement.
+2023-05-10 17:29:20,881::INFO::Airspy_rear::Start measurement.
+2023-05-10 17:29:20,952::INFO::DisplayThread::Start measurement.
+2023-05-10 17:30:40,282::INFO::main::Terminated by user.
+2023-05-10 17:30:40,282::INFO::main::Wait for other threads.
+2023-05-10 17:30:41,009::INFO::DataLogger::Finish measurement.
+2023-05-10 17:30:42,042::INFO::Airspy_front::Write 50 measurements to file.
+2023-05-10 17:30:42,126::INFO::Airspy_front::Finish measurement.
+2023-05-10 17:30:42,171::INFO::Airspy_front::Disconnect.
+2023-05-10 17:30:42,220::INFO::DisplayThread::Finish measurement.
+2023-05-10 17:30:42,319::INFO::Airspy_rear::Write 81 measurements to file.
+2023-05-10 17:30:42,320::INFO::Airspy_rear::Finish measurement.
+2023-05-10 17:30:42,320::INFO::Airspy_rear::Disconnect.
+2023-05-10 17:30:43,538::INFO::Gpsimu::Write 122 measurements to file.
+2023-05-10 17:30:43,549::INFO::Gpsimu::Finish measurement.
+2023-05-10 17:30:46,782::INFO::MPU_4::Write 40491 measurements to file.
+2023-05-10 17:30:46,818::INFO::MPU_4::Finish measurement.
+2023-05-10 17:30:47,667::INFO::MPU_5::Write 40349 measurements to file.
+2023-05-10 17:30:47,704::INFO::MPU_5::Finish measurement.
+2023-05-10 17:30:48,543::INFO::MPU_3::Write 40474 measurements to file.
+2023-05-10 17:30:48,581::INFO::MPU_3::Finish measurement.
+2023-05-10 17:30:49,418::INFO::MPU_6::Write 40444 measurements to file.
+2023-05-10 17:30:49,454::INFO::MPU_6::Finish measurement.
+2023-05-10 17:30:50,292::INFO::MPU_2::Write 40621 measurements to file.
+2023-05-10 17:30:50,330::INFO::MPU_2::Finish measurement.
+2023-05-10 17:30:51,176::INFO::MPU_1::Write 40583 measurements to file.
+2023-05-10 17:30:51,214::INFO::MPU_1::Finish measurement.
+2023-05-10 17:30:52,969::INFO::MPU_7::Write 83531 measurements to file.
+2023-05-10 17:30:53,036::INFO::MPU_7::Finish measurement.
+2023-05-10 17:30:53,036::INFO::main::Exit programm.
+2023-05-10 17:35:01,337::INFO::DataLogger::Ready to start measurement.
+2023-05-10 17:35:01,339::INFO::RemoteControlThread::Ready to receive input.
+2023-05-10 17:35:01,341::INFO::MPU_1::Ready to start measurement.
+2023-05-10 17:35:01,349::INFO::MPU_2::Ready to start measurement.
+2023-05-10 17:35:01,354::INFO::MPU_3::Ready to start measurement.
+2023-05-10 17:35:01,357::INFO::MPU_4::Ready to start measurement.
+2023-05-10 17:35:01,360::INFO::MPU_5::Ready to start measurement.
+2023-05-10 17:35:01,369::INFO::MPU_6::Ready to start measurement.
+2023-05-10 17:35:01,371::INFO::MPU_7::Ready to start measurement.
+2023-05-10 17:35:01,375::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-10 17:35:01,377::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-10 17:35:01,379::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 17:35:01,385::INFO::Gpsimu::Ready to start measurement.
+2023-05-10 17:35:01,386::INFO::main::15 threads are started.
+2023-05-10 17:35:01,379::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:35:07,861::INFO::Airspy_front::Connected to sensor.
+2023-05-10 17:35:08,061::INFO::Airspy_front::Ready to start measurement.
+2023-05-10 17:35:10,636::INFO::Airspy_rear::Connected to sensor.
+2023-05-10 17:35:10,812::INFO::Airspy_rear::Ready to start measurement.
+2023-05-10 17:36:25,094::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 17:36:25,334::INFO::WheelSpeed_rear::Start measurement.
+2023-05-10 17:36:25,335::INFO::DisplayThread::Ready to start measurement.
+2023-05-10 17:36:25,340::INFO::DisplayThread::Start measurement.
+2023-05-10 17:36:25,335::INFO::WheelSpeed_front::Start measurement.
+2023-05-10 17:36:25,336::INFO::MPU_4::Start measurement.
+2023-05-10 17:36:25,336::INFO::MPU_7::Start measurement.
+2023-05-10 17:36:25,337::INFO::MPU_1::Start measurement.
+2023-05-10 17:36:25,337::INFO::MPU_3::Start measurement.
+2023-05-10 17:36:25,338::INFO::Airspy_rear::Start measurement.
+2023-05-10 17:36:25,338::INFO::Airspy_front::Start measurement.
+2023-05-10 17:36:25,338::INFO::MPU_6::Start measurement.
+2023-05-10 17:36:25,339::INFO::Gpsimu::Start measurement.
+2023-05-10 17:36:25,339::INFO::MPU_2::Start measurement.
+2023-05-10 17:36:25,335::INFO::MPU_5::Start measurement.
+2023-05-10 17:36:25,346::INFO::DataLogger::Start measurement.
+2023-05-10 17:36:25,423::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,432::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,443::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,448::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,455::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,464::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,466::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,481::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,490::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,502::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,506::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,510::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,515::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,527::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:25,529::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,024::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,037::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,041::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,044::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,052::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,063::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,074::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,085::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,091::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,103::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,107::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,124::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,130::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,135::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:36:27,148::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:37:06,324::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 17:37:06,448::INFO::DataLogger::Finish measurement.
+2023-05-10 17:37:07,756::INFO::Airspy_front::Write 25 measurements to file.
+2023-05-10 17:37:07,773::INFO::Airspy_front::Finish measurement.
+2023-05-10 17:37:07,853::INFO::Airspy_rear::Write 42 measurements to file.
+2023-05-10 17:37:07,859::INFO::Airspy_rear::Finish measurement.
+2023-05-10 17:37:07,877::INFO::DisplayThread::Finish measurement.
+2023-05-10 17:37:09,842::INFO::MPU_6::Write 21191 measurements to file.
+2023-05-10 17:37:09,859::INFO::MPU_6::Finish measurement.
+2023-05-10 17:37:09,862::INFO::Gpsimu::Write 79 measurements to file.
+2023-05-10 17:37:09,863::INFO::Gpsimu::Finish measurement.
+2023-05-10 17:37:10,328::INFO::MPU_5::Write 21136 measurements to file.
+2023-05-10 17:37:10,356::INFO::MPU_5::Finish measurement.
+2023-05-10 17:37:10,805::INFO::MPU_4::Write 21763 measurements to file.
+2023-05-10 17:37:10,826::INFO::MPU_4::Finish measurement.
+2023-05-10 17:37:11,290::INFO::MPU_3::Write 21780 measurements to file.
+2023-05-10 17:37:11,311::INFO::MPU_3::Finish measurement.
+2023-05-10 17:37:11,775::INFO::MPU_1::Write 21450 measurements to file.
+2023-05-10 17:37:11,802::INFO::MPU_1::Finish measurement.
+2023-05-10 17:37:12,244::INFO::MPU_2::Write 21270 measurements to file.
+2023-05-10 17:37:12,264::INFO::MPU_2::Finish measurement.
+2023-05-10 17:37:13,178::INFO::MPU_7::Write 42728 measurements to file.
+2023-05-10 17:37:13,211::INFO::MPU_7::Finish measurement.
+2023-05-10 17:37:54,230::INFO::main::Terminated by user.
+2023-05-10 17:37:54,231::INFO::main::Wait for other threads.
+2023-05-10 17:37:57,785::INFO::Airspy_front::Disconnect.
+2023-05-10 17:37:57,865::INFO::Airspy_rear::Disconnect.
+2023-05-10 17:38:03,213::INFO::main::Exit programm.
+2023-05-10 17:38:17,650::INFO::DataLogger::Ready to start measurement.
+2023-05-10 17:38:17,653::INFO::RemoteControlThread::Ready to receive input.
+2023-05-10 17:38:17,661::INFO::MPU_1::Ready to start measurement.
+2023-05-10 17:38:17,668::INFO::MPU_2::Ready to start measurement.
+2023-05-10 17:38:17,672::INFO::MPU_3::Ready to start measurement.
+2023-05-10 17:38:17,679::INFO::MPU_4::Ready to start measurement.
+2023-05-10 17:38:17,686::INFO::MPU_5::Ready to start measurement.
+2023-05-10 17:38:17,688::INFO::MPU_6::Ready to start measurement.
+2023-05-10 17:38:17,690::INFO::MPU_7::Ready to start measurement.
+2023-05-10 17:38:17,694::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-10 17:38:17,695::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-10 17:38:17,700::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:38:17,698::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 17:38:17,705::INFO::Gpsimu::Ready to start measurement.
+2023-05-10 17:38:17,705::INFO::main::15 threads are started.
+2023-05-10 17:38:36,674::WARNING::Airspy_rear::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 17:38:39,839::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:38:44,194::WARNING::Airspy_rear::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 17:38:47,345::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:38:51,548::INFO::Airspy_rear::Connected to sensor.
+2023-05-10 17:38:51,745::INFO::Airspy_rear::Ready to start measurement.
+2023-05-10 17:39:00,591::WARNING::Airspy_front::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 17:39:03,770::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 17:39:14,079::INFO::Airspy_front::Connected to sensor.
+2023-05-10 17:39:14,272::INFO::Airspy_front::Ready to start measurement.
+2023-05-10 17:39:27,378::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 17:39:27,563::INFO::MPU_5::Start measurement.
+2023-05-10 17:39:27,564::INFO::MPU_1::Start measurement.
+2023-05-10 17:39:27,564::INFO::MPU_2::Start measurement.
+2023-05-10 17:39:27,564::INFO::MPU_7::Start measurement.
+2023-05-10 17:39:27,564::INFO::MPU_3::Start measurement.
+2023-05-10 17:39:27,564::INFO::WheelSpeed_front::Start measurement.
+2023-05-10 17:39:27,564::INFO::Airspy_rear::Start measurement.
+2023-05-10 17:39:27,564::INFO::WheelSpeed_rear::Start measurement.
+2023-05-10 17:39:27,564::INFO::DataLogger::Start measurement.
+2023-05-10 17:39:27,564::INFO::Gpsimu::Start measurement.
+2023-05-10 17:39:27,565::INFO::MPU_4::Start measurement.
+2023-05-10 17:39:27,565::INFO::MPU_6::Start measurement.
+2023-05-10 17:39:27,565::INFO::DisplayThread::Ready to start measurement.
+2023-05-10 17:39:27,565::INFO::Airspy_front::Start measurement.
+2023-05-10 17:39:27,603::INFO::DisplayThread::Start measurement.
+2023-05-10 17:39:27,621::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,641::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,656::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,661::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,675::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,683::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,685::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,691::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,696::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,702::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,717::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,738::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,759::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,765::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:27,770::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,040::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,043::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,061::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,069::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,118::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,122::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,125::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,131::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,134::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,145::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,150::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,169::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,178::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,182::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:29,190::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:39:50,627::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 17:39:50,718::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-10 17:39:51,276::INFO::Airspy_front::Write 24 measurements to file.
+2023-05-10 17:39:51,277::INFO::Airspy_front::Finish measurement.
+2023-05-10 17:39:51,618::INFO::DataLogger::Finish measurement.
+2023-05-10 17:39:51,649::INFO::WheelSpeed_front::Finish measurement.
+2023-05-10 17:39:52,101::INFO::DisplayThread::Finish measurement.
+2023-05-10 17:39:52,497::INFO::MPU_6::Write 11604 measurements to file.
+2023-05-10 17:39:52,506::INFO::MPU_6::Finish measurement.
+2023-05-10 17:39:52,758::INFO::MPU_5::Write 11624 measurements to file.
+2023-05-10 17:39:52,773::INFO::MPU_5::Finish measurement.
+2023-05-10 17:39:53,018::INFO::MPU_4::Write 11779 measurements to file.
+2023-05-10 17:39:53,030::INFO::MPU_4::Finish measurement.
+2023-05-10 17:39:53,278::INFO::MPU_2::Write 11851 measurements to file.
+2023-05-10 17:39:53,290::INFO::MPU_2::Finish measurement.
+2023-05-10 17:39:53,546::INFO::MPU_1::Write 11929 measurements to file.
+2023-05-10 17:39:53,571::INFO::MPU_1::Finish measurement.
+2023-05-10 17:39:53,806::INFO::MPU_3::Write 11867 measurements to file.
+2023-05-10 17:39:53,817::INFO::MPU_3::Finish measurement.
+2023-05-10 17:39:54,381::INFO::MPU_7::Write 23674 measurements to file.
+2023-05-10 17:39:54,391::INFO::Gpsimu::Write 61 measurements to file.
+2023-05-10 17:39:54,392::INFO::Gpsimu::Finish measurement.
+2023-05-10 17:39:54,403::INFO::MPU_7::Finish measurement.
+2023-05-10 17:40:16,207::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 17:40:16,260::INFO::MPU_6::Start measurement.
+2023-05-10 17:40:16,261::INFO::DisplayThread::Start measurement.
+2023-05-10 17:40:16,262::INFO::WheelSpeed_front::Start measurement.
+2023-05-10 17:40:16,263::INFO::MPU_5::Start measurement.
+2023-05-10 17:40:16,263::INFO::MPU_1::Start measurement.
+2023-05-10 17:40:16,263::INFO::Gpsimu::Start measurement.
+2023-05-10 17:40:16,263::INFO::DataLogger::Start measurement.
+2023-05-10 17:40:16,263::INFO::MPU_4::Start measurement.
+2023-05-10 17:40:16,264::INFO::Airspy_front::Start measurement.
+2023-05-10 17:40:16,264::INFO::MPU_2::Start measurement.
+2023-05-10 17:40:16,264::INFO::WheelSpeed_rear::Start measurement.
+2023-05-10 17:40:16,264::INFO::MPU_3::Start measurement.
+2023-05-10 17:40:16,265::INFO::MPU_7::Start measurement.
+2023-05-10 17:40:50,390::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 17:40:51,327::INFO::WheelSpeed_front::Finish measurement.
+2023-05-10 17:40:51,363::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-10 17:40:51,370::INFO::DataLogger::Finish measurement.
+2023-05-10 17:40:51,563::INFO::DisplayThread::Finish measurement.
+2023-05-10 17:40:53,366::INFO::MPU_3::Write 17594 measurements to file.
+2023-05-10 17:40:53,383::INFO::MPU_3::Finish measurement.
+2023-05-10 17:40:53,749::INFO::MPU_5::Write 17324 measurements to file.
+2023-05-10 17:40:53,778::INFO::MPU_5::Finish measurement.
+2023-05-10 17:40:54,128::INFO::MPU_6::Write 17404 measurements to file.
+2023-05-10 17:40:54,143::INFO::MPU_6::Finish measurement.
+2023-05-10 17:40:54,511::INFO::MPU_4::Write 17553 measurements to file.
+2023-05-10 17:40:54,522::INFO::Gpsimu::Write 60 measurements to file.
+2023-05-10 17:40:54,522::INFO::Gpsimu::Finish measurement.
+2023-05-10 17:40:54,530::INFO::MPU_4::Finish measurement.
+2023-05-10 17:40:54,933::INFO::MPU_2::Write 17962 measurements to file.
+2023-05-10 17:40:54,952::INFO::MPU_2::Finish measurement.
+2023-05-10 17:40:55,338::INFO::MPU_1::Write 17983 measurements to file.
+2023-05-10 17:40:55,356::INFO::MPU_1::Finish measurement.
+2023-05-10 17:40:56,135::INFO::MPU_7::Write 37045 measurements to file.
+2023-05-10 17:40:56,165::INFO::MPU_7::Finish measurement.
+2023-05-10 17:45:02,250::INFO::main::Terminated by user.
+2023-05-10 17:45:02,251::INFO::main::Wait for other threads.
+2023-05-10 17:45:11,579::INFO::main::Exit programm.
+2023-05-10 17:45:17,898::INFO::DataLogger::Ready to start measurement.
+2023-05-10 17:45:17,899::INFO::RemoteControlThread::Ready to receive input.
+2023-05-10 17:45:17,901::INFO::MPU_1::Ready to start measurement.
+2023-05-10 17:45:17,908::INFO::MPU_2::Ready to start measurement.
+2023-05-10 17:45:17,912::INFO::MPU_3::Ready to start measurement.
+2023-05-10 17:45:17,918::INFO::MPU_4::Ready to start measurement.
+2023-05-10 17:45:17,923::INFO::MPU_5::Ready to start measurement.
+2023-05-10 17:45:17,931::INFO::MPU_6::Ready to start measurement.
+2023-05-10 17:45:17,934::INFO::MPU_7::Ready to start measurement.
+2023-05-10 17:45:17,940::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-10 17:45:17,941::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-10 17:45:17,943::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 17:45:17,946::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:45:17,951::INFO::Gpsimu::Ready to start measurement.
+2023-05-10 17:45:17,953::INFO::main::15 threads are started.
+2023-05-10 17:45:23,861::INFO::Airspy_front::Connected to sensor.
+2023-05-10 17:45:24,030::INFO::Airspy_front::Ready to start measurement.
+2023-05-10 17:45:35,375::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 17:45:35,547::INFO::MPU_3::Start measurement.
+2023-05-10 17:45:35,547::INFO::MPU_4::Start measurement.
+2023-05-10 17:45:35,547::INFO::MPU_6::Start measurement.
+2023-05-10 17:45:35,547::INFO::Gpsimu::Start measurement.
+2023-05-10 17:45:35,548::INFO::MPU_1::Start measurement.
+2023-05-10 17:45:35,548::INFO::WheelSpeed_rear::Start measurement.
+2023-05-10 17:45:35,548::INFO::MPU_7::Start measurement.
+2023-05-10 17:45:35,548::INFO::DisplayThread::Ready to start measurement.
+2023-05-10 17:45:35,566::INFO::DisplayThread::Start measurement.
+2023-05-10 17:45:35,548::INFO::MPU_2::Start measurement.
+2023-05-10 17:45:35,548::INFO::Airspy_front::Start measurement.
+2023-05-10 17:45:35,548::INFO::WheelSpeed_front::Start measurement.
+2023-05-10 17:45:35,548::INFO::DataLogger::Start measurement.
+2023-05-10 17:45:35,564::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,548::INFO::MPU_5::Start measurement.
+2023-05-10 17:45:35,606::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,609::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,619::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,628::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,635::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,640::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,644::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,648::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,653::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,656::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,665::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,668::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,672::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:35,682::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:45:45,946::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 17:45:46,603::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-10 17:45:46,605::INFO::DataLogger::Finish measurement.
+2023-05-10 17:45:46,645::INFO::WheelSpeed_front::Finish measurement.
+2023-05-10 17:45:46,754::INFO::DisplayThread::Finish measurement.
+2023-05-10 17:45:46,793::INFO::MPU_1::Write 5198 measurements to file.
+2023-05-10 17:45:46,800::INFO::MPU_1::Finish measurement.
+2023-05-10 17:45:46,925::INFO::MPU_5::Write 5423 measurements to file.
+2023-05-10 17:45:46,930::INFO::MPU_5::Finish measurement.
+2023-05-10 17:45:47,051::INFO::MPU_4::Write 5282 measurements to file.
+2023-05-10 17:45:47,056::INFO::MPU_4::Finish measurement.
+2023-05-10 17:45:47,166::INFO::MPU_2::Write 5125 measurements to file.
+2023-05-10 17:45:47,171::INFO::MPU_2::Finish measurement.
+2023-05-10 17:45:47,288::INFO::MPU_3::Write 5276 measurements to file.
+2023-05-10 17:45:47,293::INFO::MPU_3::Finish measurement.
+2023-05-10 17:45:47,411::INFO::MPU_6::Write 5373 measurements to file.
+2023-05-10 17:45:47,417::INFO::MPU_6::Finish measurement.
+2023-05-10 17:45:47,694::INFO::MPU_7::Write 11253 measurements to file.
+2023-05-10 17:45:47,705::INFO::Gpsimu::Write 29 measurements to file.
+2023-05-10 17:45:47,705::INFO::Gpsimu::Finish measurement.
+2023-05-10 17:45:47,706::INFO::MPU_7::Finish measurement.
+2023-05-10 17:46:00,430::WARNING::Airspy_rear::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 17:46:03,434::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:46:43,949::WARNING::Airspy_rear::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 17:46:46,952::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:47:27,469::WARNING::Airspy_rear::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 17:47:30,472::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:48:10,989::WARNING::Airspy_rear::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 17:48:12,959::INFO::main::Terminated by user.
+2023-05-10 17:48:12,960::INFO::main::Wait for other threads.
+2023-05-10 17:48:23,295::INFO::DataLogger::Ready to start measurement.
+2023-05-10 17:48:23,297::INFO::RemoteControlThread::Ready to receive input.
+2023-05-10 17:48:23,301::INFO::MPU_1::Ready to start measurement.
+2023-05-10 17:48:23,303::INFO::MPU_2::Ready to start measurement.
+2023-05-10 17:48:23,304::INFO::MPU_3::Ready to start measurement.
+2023-05-10 17:48:23,308::INFO::MPU_4::Ready to start measurement.
+2023-05-10 17:48:23,311::INFO::MPU_5::Ready to start measurement.
+2023-05-10 17:48:23,312::INFO::MPU_6::Ready to start measurement.
+2023-05-10 17:48:23,313::INFO::MPU_7::Ready to start measurement.
+2023-05-10 17:48:23,315::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-10 17:48:23,316::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-10 17:48:23,316::INFO::Airspy_front::Try to connect to sensor.
+2023-05-10 17:48:23,317::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:48:23,320::INFO::Gpsimu::Ready to start measurement.
+2023-05-10 17:48:23,320::INFO::main::15 threads are started.
+2023-05-10 17:48:31,154::INFO::Airspy_front::Connected to sensor.
+2023-05-10 17:48:31,328::INFO::Airspy_front::Ready to start measurement.
+2023-05-10 17:49:06,669::WARNING::Airspy_rear::Failed to connect to sensor. Try again in 3 seconds.
+2023-05-10 17:49:09,786::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-10 17:49:23,856::INFO::Airspy_rear::Connected to sensor.
+2023-05-10 17:49:23,970::INFO::Airspy_rear::Ready to start measurement.
+2023-05-10 17:49:33,641::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 17:49:33,843::INFO::DataLogger::Start measurement.
+2023-05-10 17:49:33,843::INFO::DisplayThread::Ready to start measurement.
+2023-05-10 17:49:33,843::INFO::MPU_1::Start measurement.
+2023-05-10 17:49:33,843::INFO::MPU_6::Start measurement.
+2023-05-10 17:49:33,844::INFO::MPU_5::Start measurement.
+2023-05-10 17:49:33,844::INFO::MPU_4::Start measurement.
+2023-05-10 17:49:33,844::INFO::WheelSpeed_rear::Start measurement.
+2023-05-10 17:49:33,844::INFO::MPU_2::Start measurement.
+2023-05-10 17:49:33,844::INFO::Gpsimu::Start measurement.
+2023-05-10 17:49:33,844::INFO::WheelSpeed_front::Start measurement.
+2023-05-10 17:49:33,844::INFO::Airspy_front::Start measurement.
+2023-05-10 17:49:33,844::INFO::MPU_7::Start measurement.
+2023-05-10 17:49:33,845::INFO::MPU_3::Start measurement.
+2023-05-10 17:49:33,845::INFO::Airspy_rear::Start measurement.
+2023-05-10 17:49:33,846::INFO::DisplayThread::Start measurement.
+2023-05-10 17:49:33,886::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,918::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,928::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,946::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,952::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,960::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,972::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,977::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,982::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,989::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:33,995::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:34,002::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:34,021::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:34,040::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:34,049::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:34,998::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,001::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,006::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,010::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,013::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,019::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,027::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,030::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,031::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,036::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,038::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,046::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,067::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,071::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:35,085::WARNING::Gpsimu::Receive unknown message type: GNTXT
+2023-05-10 17:49:40,630::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 17:49:40,889::INFO::WheelSpeed_front::Finish measurement.
+2023-05-10 17:49:40,895::INFO::DataLogger::Finish measurement.
+2023-05-10 17:49:41,013::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-10 17:49:41,198::INFO::MPU_1::Write 3283 measurements to file.
+2023-05-10 17:49:41,202::INFO::MPU_1::Finish measurement.
+2023-05-10 17:49:41,205::INFO::DisplayThread::Finish measurement.
+2023-05-10 17:49:41,278::INFO::MPU_2::Write 3320 measurements to file.
+2023-05-10 17:49:41,281::INFO::MPU_2::Finish measurement.
+2023-05-10 17:49:41,351::INFO::MPU_3::Write 3246 measurements to file.
+2023-05-10 17:49:41,354::INFO::MPU_3::Finish measurement.
+2023-05-10 17:49:41,427::INFO::MPU_4::Write 3303 measurements to file.
+2023-05-10 17:49:41,430::INFO::MPU_4::Finish measurement.
+2023-05-10 17:49:41,502::INFO::MPU_5::Write 3329 measurements to file.
+2023-05-10 17:49:41,506::INFO::MPU_5::Finish measurement.
+2023-05-10 17:49:41,617::INFO::MPU_6::Write 3302 measurements to file.
+2023-05-10 17:49:41,621::INFO::MPU_6::Finish measurement.
+2023-05-10 17:49:41,785::INFO::MPU_7::Write 7395 measurements to file.
+2023-05-10 17:49:41,790::INFO::MPU_7::Finish measurement.
+2023-05-10 17:49:41,792::INFO::Airspy_rear::Write 8 measurements to file.
+2023-05-10 17:49:41,793::INFO::Airspy_rear::Finish measurement.
+2023-05-10 17:49:41,795::INFO::Gpsimu::Write 44 measurements to file.
+2023-05-10 17:49:41,796::INFO::Gpsimu::Finish measurement.
+2023-05-10 17:49:48,974::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 17:49:49,027::INFO::MPU_1::Start measurement.
+2023-05-10 17:49:49,028::INFO::MPU_5::Start measurement.
+2023-05-10 17:49:49,031::INFO::DataLogger::Start measurement.
+2023-05-10 17:49:49,032::INFO::WheelSpeed_rear::Start measurement.
+2023-05-10 17:49:49,033::INFO::Airspy_rear::Start measurement.
+2023-05-10 17:49:49,035::INFO::DisplayThread::Start measurement.
+2023-05-10 17:49:49,040::INFO::Gpsimu::Start measurement.
+2023-05-10 17:49:49,041::INFO::MPU_3::Start measurement.
+2023-05-10 17:49:49,042::INFO::WheelSpeed_front::Start measurement.
+2023-05-10 17:49:49,043::INFO::MPU_2::Start measurement.
+2023-05-10 17:49:49,044::INFO::MPU_6::Start measurement.
+2023-05-10 17:49:49,044::INFO::MPU_4::Start measurement.
+2023-05-10 17:49:49,045::INFO::MPU_7::Start measurement.
+2023-05-10 17:50:00,588::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 17:50:01,052::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-10 17:50:01,089::INFO::WheelSpeed_front::Finish measurement.
+2023-05-10 17:50:01,173::INFO::DataLogger::Finish measurement.
+2023-05-10 17:50:01,542::INFO::DisplayThread::Finish measurement.
+2023-05-10 17:50:01,640::INFO::MPU_6::Write 5913 measurements to file.
+2023-05-10 17:50:01,645::INFO::MPU_6::Finish measurement.
+2023-05-10 17:50:01,782::INFO::MPU_2::Write 6163 measurements to file.
+2023-05-10 17:50:01,788::INFO::MPU_2::Finish measurement.
+2023-05-10 17:50:01,912::INFO::MPU_4::Write 5739 measurements to file.
+2023-05-10 17:50:01,917::INFO::MPU_4::Finish measurement.
+2023-05-10 17:50:02,039::INFO::MPU_3::Write 5746 measurements to file.
+2023-05-10 17:50:02,045::INFO::MPU_3::Finish measurement.
+2023-05-10 17:50:02,167::INFO::MPU_5::Write 5825 measurements to file.
+2023-05-10 17:50:02,173::INFO::MPU_5::Finish measurement.
+2023-05-10 17:50:02,301::INFO::MPU_1::Write 6095 measurements to file.
+2023-05-10 17:50:02,307::INFO::MPU_1::Finish measurement.
+2023-05-10 17:50:02,309::INFO::Airspy_rear::Write 13 measurements to file.
+2023-05-10 17:50:02,310::INFO::Airspy_rear::Finish measurement.
+2023-05-10 17:50:02,312::INFO::Gpsimu::Write 20 measurements to file.
+2023-05-10 17:50:02,312::INFO::Gpsimu::Finish measurement.
+2023-05-10 17:50:02,578::INFO::MPU_7::Write 12558 measurements to file.
+2023-05-10 17:50:02,587::INFO::MPU_7::Finish measurement.
+2023-05-10 17:50:07,027::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 17:50:07,080::INFO::WheelSpeed_rear::Start measurement.
+2023-05-10 17:50:07,081::INFO::DataLogger::Start measurement.
+2023-05-10 17:50:07,081::INFO::MPU_6::Start measurement.
+2023-05-10 17:50:07,081::INFO::Gpsimu::Start measurement.
+2023-05-10 17:50:07,082::INFO::MPU_4::Start measurement.
+2023-05-10 17:50:07,082::INFO::MPU_1::Start measurement.
+2023-05-10 17:50:07,082::INFO::Airspy_rear::Start measurement.
+2023-05-10 17:50:07,082::INFO::WheelSpeed_front::Start measurement.
+2023-05-10 17:50:07,083::INFO::MPU_2::Start measurement.
+2023-05-10 17:50:07,082::INFO::DisplayThread::Start measurement.
+2023-05-10 17:50:07,083::INFO::MPU_5::Start measurement.
+2023-05-10 17:50:07,083::INFO::MPU_7::Start measurement.
+2023-05-10 17:50:07,083::INFO::MPU_3::Start measurement.
+2023-05-10 17:50:16,960::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 17:50:17,102::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-10 17:50:17,102::INFO::DataLogger::Finish measurement.
+2023-05-10 17:50:17,157::INFO::WheelSpeed_front::Finish measurement.
+2023-05-10 17:50:17,476::INFO::Airspy_rear::Write 11 measurements to file.
+2023-05-10 17:50:17,477::INFO::Airspy_rear::Finish measurement.
+2023-05-10 17:50:17,694::INFO::DisplayThread::Finish measurement.
+2023-05-10 17:50:17,867::INFO::MPU_4::Write 5499 measurements to file.
+2023-05-10 17:50:17,877::INFO::MPU_4::Finish measurement.
+2023-05-10 17:50:17,999::INFO::MPU_2::Write 5430 measurements to file.
+2023-05-10 17:50:18,004::INFO::MPU_2::Finish measurement.
+2023-05-10 17:50:18,121::INFO::MPU_6::Write 5125 measurements to file.
+2023-05-10 17:50:18,126::INFO::MPU_6::Finish measurement.
+2023-05-10 17:50:18,237::INFO::MPU_1::Write 5317 measurements to file.
+2023-05-10 17:50:18,242::INFO::MPU_1::Finish measurement.
+2023-05-10 17:50:18,350::INFO::MPU_5::Write 5032 measurements to file.
+2023-05-10 17:50:18,355::INFO::MPU_5::Finish measurement.
+2023-05-10 17:50:18,471::INFO::MPU_3::Write 5388 measurements to file.
+2023-05-10 17:50:18,476::INFO::MPU_3::Finish measurement.
+2023-05-10 17:50:18,478::INFO::Gpsimu::Write 16 measurements to file.
+2023-05-10 17:50:18,478::INFO::Gpsimu::Finish measurement.
+2023-05-10 17:50:18,693::INFO::MPU_7::Write 9996 measurements to file.
+2023-05-10 17:50:18,701::INFO::MPU_7::Finish measurement.
+2023-05-10 17:50:34,439::INFO::RemoteControlThread::Button A was pressed.
+2023-05-10 17:50:34,482::INFO::DataLogger::Start measurement.
+2023-05-10 17:50:34,483::INFO::Airspy_rear::Start measurement.
+2023-05-10 17:50:34,483::INFO::WheelSpeed_rear::Start measurement.
+2023-05-10 17:50:34,483::INFO::MPU_5::Start measurement.
+2023-05-10 17:50:34,483::INFO::MPU_3::Start measurement.
+2023-05-10 17:50:34,484::INFO::MPU_6::Start measurement.
+2023-05-10 17:50:34,484::INFO::WheelSpeed_front::Start measurement.
+2023-05-10 17:50:34,484::INFO::Gpsimu::Start measurement.
+2023-05-10 17:50:34,484::INFO::MPU_4::Start measurement.
+2023-05-10 17:50:34,484::INFO::DisplayThread::Start measurement.
+2023-05-10 17:50:34,485::INFO::MPU_2::Start measurement.
+2023-05-10 17:50:34,485::INFO::MPU_1::Start measurement.
+2023-05-10 17:50:34,485::INFO::MPU_7::Start measurement.
+2023-05-10 17:50:41,599::INFO::RemoteControlThread::Button C was pressed.
+2023-05-10 17:50:42,143::INFO::MPU_2::Write 3861 measurements to file.
+2023-05-10 17:50:42,147::INFO::MPU_2::Finish measurement.
+2023-05-10 17:50:42,171::INFO::DisplayThread::Finish measurement.
+2023-05-10 17:50:42,230::INFO::MPU_6::Write 3802 measurements to file.
+2023-05-10 17:50:42,234::INFO::MPU_6::Finish measurement.
+2023-05-10 17:50:42,377::INFO::MPU_5::Write 3836 measurements to file.
+2023-05-10 17:50:42,382::INFO::MPU_5::Finish measurement.
+2023-05-10 17:50:42,486::INFO::MPU_1::Write 3827 measurements to file.
+2023-05-10 17:50:42,492::INFO::MPU_1::Finish measurement.
+2023-05-10 17:50:42,498::INFO::DataLogger::Finish measurement.
+2023-05-10 17:50:42,500::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-10 17:50:42,604::INFO::MPU_4::Write 3565 measurements to file.
+2023-05-10 17:50:42,607::INFO::MPU_4::Finish measurement.
+2023-05-10 17:50:42,687::INFO::MPU_3::Write 3669 measurements to file.
+2023-05-10 17:50:42,691::INFO::MPU_3::Finish measurement.
+2023-05-10 17:50:42,826::INFO::MPU_7::Write 6371 measurements to file.
+2023-05-10 17:50:42,832::INFO::MPU_7::Finish measurement.
+2023-05-10 17:50:42,834::INFO::Gpsimu::Write 25 measurements to file.
+2023-05-10 17:50:42,834::INFO::Gpsimu::Finish measurement.
+2023-05-10 17:50:42,836::INFO::Airspy_rear::Write 8 measurements to file.
+2023-05-10 17:50:42,836::INFO::Airspy_rear::Finish measurement.
+2023-05-10 17:50:48,726::INFO::main::Terminated by user.
+2023-05-10 17:50:48,727::INFO::main::Wait for other threads.
+2023-05-10 17:50:52,837::INFO::Airspy_rear::Disconnect.
+2023-05-10 17:50:52,842::INFO::main::Exit programm.
+2023-05-12 12:10:00,339::INFO::DataLogger::Ready to start measurement.
+2023-05-12 12:10:00,340::INFO::RemoteControlThread::Ready to receive input.
+2023-05-12 12:10:00,369::INFO::MPU_6::Ready to start measurement.
+2023-05-12 12:10:00,345::INFO::MPU_2::Ready to start measurement.
+2023-05-12 12:10:00,346::INFO::MPU_3::Ready to start measurement.
+2023-05-12 12:10:00,349::INFO::MPU_4::Ready to start measurement.
+2023-05-12 12:10:00,359::INFO::MPU_5::Ready to start measurement.
+2023-05-12 12:10:00,341::INFO::MPU_1::Ready to start measurement.
+2023-05-12 12:10:00,399::INFO::MPU_7::Ready to start measurement.
+2023-05-12 12:10:00,412::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-12 12:10:00,418::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-12 12:10:00,422::INFO::Airspy_front::Try to connect to sensor.
+2023-05-12 12:10:00,440::INFO::Airspy_rear::Try to connect to sensor.
+2023-05-12 12:12:56,058::INFO::DataLogger::Ready to start measurement.
+2023-05-12 12:12:56,059::INFO::RemoteControlThread::Ready to receive input.
+2023-05-12 12:12:56,066::INFO::MPU_1::Ready to start measurement.
+2023-05-12 12:12:56,069::INFO::MPU_2::Ready to start measurement.
+2023-05-12 12:12:56,077::INFO::MPU_3::Ready to start measurement.
+2023-05-12 12:12:56,084::INFO::MPU_4::Ready to start measurement.
+2023-05-12 12:12:56,087::INFO::MPU_5::Ready to start measurement.
+2023-05-12 12:12:56,090::INFO::MPU_6::Ready to start measurement.
+2023-05-12 12:12:56,094::INFO::MPU_7::Ready to start measurement.
+2023-05-12 12:12:56,101::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-12 12:12:56,104::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-12 12:12:56,108::INFO::main::12 threads are started.
+2023-05-12 12:15:03,863::INFO::main::Terminated by user.
+2023-05-12 12:15:04,011::INFO::main::Wait for other threads.
+2023-05-12 12:15:04,083::INFO::DisplayThread::Ready to start measurement.
+2023-05-12 12:15:08,217::INFO::main::Exit programm.
+2023-05-12 12:15:19,322::INFO::DataLogger::Ready to start measurement.
+2023-05-12 12:15:19,323::INFO::RemoteControlThread::Ready to receive input.
+2023-05-12 12:15:19,325::INFO::MPU_1::Ready to start measurement.
+2023-05-12 12:15:19,336::INFO::MPU_2::Ready to start measurement.
+2023-05-12 12:15:19,340::INFO::MPU_3::Ready to start measurement.
+2023-05-12 12:15:19,343::INFO::MPU_4::Ready to start measurement.
+2023-05-12 12:15:19,346::INFO::MPU_5::Ready to start measurement.
+2023-05-12 12:15:19,357::INFO::MPU_6::Ready to start measurement.
+2023-05-12 12:15:19,361::INFO::MPU_7::Ready to start measurement.
+2023-05-12 12:15:19,367::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-12 12:15:19,368::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-12 12:15:19,372::INFO::main::12 threads are started.
+2023-05-12 12:16:08,066::INFO::main::Terminated by user.
+2023-05-12 12:16:08,240::INFO::main::Wait for other threads.
+2023-05-12 12:16:08,331::INFO::DisplayThread::Ready to start measurement.
+2023-05-12 12:16:11,064::INFO::main::Exit programm.
+2023-05-12 12:16:15,203::INFO::DataLogger::Ready to start measurement.
+2023-05-12 12:16:15,206::INFO::RemoteControlThread::Ready to receive input.
+2023-05-12 12:16:15,217::INFO::MPU_1::Ready to start measurement.
+2023-05-12 12:16:15,221::INFO::MPU_2::Ready to start measurement.
+2023-05-12 12:16:15,224::INFO::MPU_3::Ready to start measurement.
+2023-05-12 12:16:15,242::INFO::MPU_4::Ready to start measurement.
+2023-05-12 12:16:15,244::INFO::MPU_5::Ready to start measurement.
+2023-05-12 12:16:15,247::INFO::MPU_6::Ready to start measurement.
+2023-05-12 12:16:15,252::INFO::MPU_7::Ready to start measurement.
+2023-05-12 12:16:15,255::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-12 12:16:15,254::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-12 12:16:15,256::INFO::main::12 threads are started.
+2023-05-12 12:16:31,141::INFO::RemoteControlThread::Button A was pressed.
+2023-05-12 12:16:31,340::INFO::MPU_1::Start measurement.
+2023-05-12 12:16:31,340::INFO::MPU_4::Start measurement.
+2023-05-12 12:16:31,340::INFO::MPU_7::Start measurement.
+2023-05-12 12:16:31,340::INFO::MPU_6::Start measurement.
+2023-05-12 12:16:31,340::INFO::DisplayThread::Ready to start measurement.
+2023-05-12 12:16:31,349::INFO::DisplayThread::Start measurement.
+2023-05-12 12:16:31,340::INFO::MPU_2::Start measurement.
+2023-05-12 12:16:31,341::INFO::WheelSpeed_front::Start measurement.
+2023-05-12 12:16:31,341::INFO::DataLogger::Start measurement.
+2023-05-12 12:16:31,341::INFO::WheelSpeed_rear::Start measurement.
+2023-05-12 12:16:31,341::INFO::MPU_5::Start measurement.
+2023-05-12 12:16:31,340::INFO::MPU_3::Start measurement.
+2023-05-12 12:16:49,361::INFO::RemoteControlThread::Button C was pressed.
+2023-05-12 12:16:49,418::INFO::DataLogger::Finish measurement.
+2023-05-12 12:16:49,479::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-12 12:16:50,697::INFO::DisplayThread::Finish measurement.
+2023-05-12 12:16:50,871::INFO::MPU_3::Write 9476 measurements to file.
+2023-05-12 12:16:50,881::INFO::MPU_3::Finish measurement.
+2023-05-12 12:16:51,115::INFO::MPU_6::Write 9476 measurements to file.
+2023-05-12 12:16:51,129::INFO::MPU_6::Finish measurement.
+2023-05-12 12:16:51,361::INFO::MPU_4::Write 9452 measurements to file.
+2023-05-12 12:16:51,371::INFO::MPU_4::Finish measurement.
+2023-05-12 12:16:51,568::INFO::MPU_5::Write 9536 measurements to file.
+2023-05-12 12:16:51,577::INFO::MPU_5::Finish measurement.
+2023-05-12 12:16:51,780::INFO::MPU_2::Write 9791 measurements to file.
+2023-05-12 12:16:51,790::INFO::MPU_2::Finish measurement.
+2023-05-12 12:16:51,993::INFO::MPU_1::Write 9823 measurements to file.
+2023-05-12 12:16:52,009::INFO::MPU_1::Finish measurement.
+2023-05-12 12:16:52,393::INFO::MPU_7::Write 18426 measurements to file.
+2023-05-12 12:16:52,409::INFO::MPU_7::Finish measurement.
+2023-05-12 12:18:33,903::INFO::main::Terminated by user.
+2023-05-12 12:18:33,903::INFO::main::Wait for other threads.
+2023-05-12 12:18:42,412::INFO::main::Exit programm.
+2023-05-12 12:18:54,956::INFO::DataLogger::Ready to start measurement.
+2023-05-12 12:18:54,957::INFO::RemoteControlThread::Ready to receive input.
+2023-05-12 12:18:54,959::INFO::MPU_1::Ready to start measurement.
+2023-05-12 12:18:54,968::INFO::MPU_2::Ready to start measurement.
+2023-05-12 12:18:54,971::INFO::MPU_3::Ready to start measurement.
+2023-05-12 12:18:54,976::INFO::MPU_4::Ready to start measurement.
+2023-05-12 12:18:54,979::INFO::MPU_5::Ready to start measurement.
+2023-05-12 12:18:54,985::INFO::MPU_6::Ready to start measurement.
+2023-05-12 12:18:54,991::INFO::MPU_7::Ready to start measurement.
+2023-05-12 12:18:54,993::INFO::WheelSpeed_front::Ready to start measurement.
+2023-05-12 12:18:55,001::INFO::WheelSpeed_rear::Ready to start measurement.
+2023-05-12 12:18:55,002::INFO::main::12 threads are started.
+2023-05-12 12:19:04,409::INFO::RemoteControlThread::Button A was pressed.
+2023-05-12 12:19:04,642::INFO::MPU_6::Start measurement.
+2023-05-12 12:19:04,648::INFO::MPU_5::Start measurement.
+2023-05-12 12:19:04,648::INFO::DataLogger::Start measurement.
+2023-05-12 12:19:04,649::INFO::MPU_2::Start measurement.
+2023-05-12 12:19:04,649::INFO::MPU_1::Start measurement.
+2023-05-12 12:19:04,649::INFO::DisplayThread::Ready to start measurement.
+2023-05-12 12:19:04,649::INFO::MPU_4::Start measurement.
+2023-05-12 12:19:04,650::INFO::MPU_3::Start measurement.
+2023-05-12 12:19:04,652::INFO::MPU_7::Start measurement.
+2023-05-12 12:19:04,653::INFO::WheelSpeed_front::Start measurement.
+2023-05-12 12:19:04,653::INFO::WheelSpeed_rear::Start measurement.
+2023-05-12 12:19:04,663::INFO::DisplayThread::Start measurement.
+2023-05-12 12:19:13,658::INFO::RemoteControlThread::Button C was pressed.
+2023-05-12 12:19:13,751::INFO::DataLogger::Finish measurement.
+2023-05-12 12:19:13,753::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-12 12:19:14,404::INFO::MPU_3::Write 4587 measurements to file.
+2023-05-12 12:19:14,500::INFO::MPU_3::Finish measurement.
+2023-05-12 12:19:14,613::INFO::MPU_6::Write 4624 measurements to file.
+2023-05-12 12:19:14,779::INFO::MPU_6::Finish measurement.
+2023-05-12 12:19:14,953::INFO::MPU_4::Write 4651 measurements to file.
+2023-05-12 12:19:15,065::INFO::MPU_4::Finish measurement.
+2023-05-12 12:19:15,182::INFO::MPU_5::Write 4665 measurements to file.
+2023-05-12 12:19:15,289::INFO::MPU_5::Finish measurement.
+2023-05-12 12:19:15,405::INFO::MPU_1::Write 4637 measurements to file.
+2023-05-12 12:19:15,535::INFO::MPU_1::Finish measurement.
+2023-05-12 12:19:15,663::INFO::MPU_2::Write 4646 measurements to file.
+2023-05-12 12:19:15,822::INFO::MPU_2::Finish measurement.
+2023-05-12 12:19:16,043::INFO::MPU_7::Write 9150 measurements to file.
+2023-05-12 12:19:16,159::INFO::MPU_7::Finish measurement.
+2023-05-12 12:19:23,101::INFO::RemoteControlThread::Button A was pressed.
+2023-05-12 12:19:23,278::INFO::DataLogger::Start measurement.
+2023-05-12 12:19:23,279::INFO::MPU_6::Start measurement.
+2023-05-12 12:19:23,279::INFO::MPU_1::Start measurement.
+2023-05-12 12:19:23,279::INFO::WheelSpeed_rear::Start measurement.
+2023-05-12 12:19:23,280::INFO::MPU_4::Start measurement.
+2023-05-12 12:19:23,280::INFO::DisplayThread::Finish measurement.
+2023-05-12 12:19:23,280::INFO::MPU_3::Start measurement.
+2023-05-12 12:19:23,281::INFO::MPU_7::Start measurement.
+2023-05-12 12:19:23,282::INFO::MPU_5::Start measurement.
+2023-05-12 12:19:23,283::INFO::MPU_2::Start measurement.
+2023-05-12 12:19:23,295::INFO::DisplayThread::Start measurement.
+2023-05-12 12:20:14,038::INFO::RemoteControlThread::Button C was pressed.
+2023-05-12 12:20:14,334::INFO::DataLogger::Finish measurement.
+2023-05-12 12:20:14,372::INFO::WheelSpeed_rear::Finish measurement.
+2023-05-12 12:20:18,469::INFO::MPU_4::Write 25975 measurements to file.
+2023-05-12 12:20:18,582::INFO::MPU_4::Finish measurement.
+2023-05-12 12:20:19,133::INFO::MPU_5::Write 25896 measurements to file.
+2023-05-12 12:20:19,253::INFO::MPU_5::Finish measurement.
+2023-05-12 12:20:19,871::INFO::MPU_6::Write 26089 measurements to file.
+2023-05-12 12:20:19,992::INFO::MPU_6::Finish measurement.
+2023-05-12 12:20:20,564::INFO::MPU_2::Write 26226 measurements to file.
+2023-05-12 12:20:20,689::INFO::MPU_2::Finish measurement.
+2023-05-12 12:20:21,303::INFO::MPU_1::Write 26458 measurements to file.
+2023-05-12 12:20:21,432::INFO::MPU_1::Finish measurement.
+2023-05-12 12:20:21,992::INFO::MPU_3::Write 26180 measurements to file.
+2023-05-12 12:20:22,123::INFO::MPU_3::Finish measurement.
+2023-05-12 12:20:23,336::INFO::MPU_7::Write 56577 measurements to file.
+2023-05-12 12:20:23,489::INFO::MPU_7::Finish measurement.
+2023-05-12 13:04:30,022::INFO::RemoteControlThread::Button A was pressed.
+2023-05-12 13:04:30,275::INFO::MPU_7::Start measurement.
+2023-05-12 13:04:30,281::INFO::DataLogger::Start measurement.
+2023-05-12 13:04:30,282::INFO::MPU_1::Start measurement.
+2023-05-12 13:04:30,283::INFO::MPU_3::Start measurement.
+2023-05-12 13:04:30,283::INFO::WheelSpeed_rear::Start measurement.
+2023-05-12 13:04:30,284::INFO::MPU_2::Start measurement.
+2023-05-12 13:04:30,284::INFO::MPU_5::Start measurement.
+2023-05-12 13:04:30,284::INFO::DisplayThread::Finish measurement.
+2023-05-12 13:04:30,288::INFO::MPU_6::Start measurement.
+2023-05-12 13:04:30,288::INFO::MPU_4::Start measurement.
+2023-05-12 13:04:30,334::INFO::DisplayThread::Start measurement.
+2023-05-12 13:04:39,976::INFO::RemoteControlThread::Button C was pressed.
+2023-05-12 13:04:40,314::INFO::DataLogger::Finish measurement.
+2023-05-12 13:04:40,694::INFO::MPU_3::Write 5124 measurements to file.
+2023-05-12 13:04:40,791::INFO::MPU_3::Finish measurement.
+2023-05-12 13:04:40,910::INFO::MPU_4::Write 5101 measurements to file.
+2023-05-12 13:04:41,050::INFO::MPU_4::Finish measurement.
+2023-05-12 13:04:41,227::INFO::MPU_1::Write 5222 measurements to file.
+2023-05-12 13:04:41,330::INFO::MPU_1::Finish measurement.
+2023-05-12 13:04:41,453::INFO::MPU_5::Write 5167 measurements to file.
+2023-05-12 13:04:41,561::INFO::MPU_5::Finish measurement.
+2023-05-12 13:04:41,697::INFO::MPU_2::Write 5212 measurements to file.
+2023-05-12 13:04:41,812::INFO::MPU_2::Finish measurement.
+2023-05-12 13:04:42,078::INFO::MPU_7::Write 9496 measurements to file.
+2023-05-12 13:04:42,195::INFO::MPU_7::Finish measurement.
+2023-05-12 13:04:42,368::INFO::MPU_6::Write 5190 measurements to file.
+2023-05-12 13:04:42,480::INFO::MPU_6::Finish measurement.
+2023-05-12 13:05:07,359::INFO::RemoteControlThread::Button A was pressed.
+2023-05-12 13:05:07,528::INFO::MPU_3::Start measurement.
+2023-05-12 13:05:07,528::INFO::MPU_4::Start measurement.
+2023-05-12 13:05:07,528::INFO::MPU_1::Start measurement.
+2023-05-12 13:05:07,528::INFO::DataLogger::Start measurement.
+2023-05-12 13:05:07,528::INFO::MPU_5::Start measurement.
+2023-05-12 13:05:07,529::INFO::DisplayThread::Finish measurement.
+2023-05-12 13:05:07,538::INFO::DisplayThread::Start measurement.
+2023-05-12 13:05:07,529::INFO::MPU_2::Start measurement.
+2023-05-12 13:05:07,529::INFO::MPU_6::Start measurement.
+2023-05-12 13:05:07,529::INFO::MPU_7::Start measurement.
+2023-05-12 13:05:17,711::INFO::RemoteControlThread::Button C was pressed.
+2023-05-12 13:05:18,472::INFO::MPU_4::Write 5319 measurements to file.
+2023-05-12 13:05:18,546::INFO::DataLogger::Finish measurement.
+2023-05-12 13:05:18,569::INFO::MPU_4::Finish measurement.
+2023-05-12 13:05:18,689::INFO::MPU_6::Write 5232 measurements to file.
+2023-05-12 13:05:18,980::INFO::MPU_6::Finish measurement.
+2023-05-12 13:05:19,168::INFO::MPU_5::Write 5335 measurements to file.
+2023-05-12 13:05:19,272::INFO::MPU_5::Finish measurement.
+2023-05-12 13:05:19,410::INFO::MPU_2::Write 5727 measurements to file.
+2023-05-12 13:05:19,518::INFO::MPU_2::Finish measurement.
+2023-05-12 13:05:19,647::INFO::MPU_3::Write 5262 measurements to file.
+2023-05-12 13:05:19,758::INFO::MPU_3::Finish measurement.
+2023-05-12 13:05:19,953::INFO::MPU_1::Write 5706 measurements to file.
+2023-05-12 13:05:20,066::INFO::MPU_1::Finish measurement.
+2023-05-12 13:05:20,306::INFO::MPU_7::Write 10360 measurements to file.
+2023-05-12 13:05:20,423::INFO::MPU_7::Finish measurement.

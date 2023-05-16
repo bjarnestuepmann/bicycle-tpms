@@ -7,10 +7,10 @@ from collections import deque
 from PIL import Image, ImageDraw, ImageFont
 import ST7735
 
-from basethread import BaseThread
+from measurementunitcomponent import MeasurementUnitComponent
 
 
-class DisplayThread(BaseThread):
+class DisplayThread(MeasurementUnitComponent):
     """Control Thread for Display"""
     
     def __init__(self, name: str, 
@@ -21,7 +21,7 @@ class DisplayThread(BaseThread):
 
         self.disp = ST7735.ST7735(
             port=port, cs=cs, dc=dc, rst=rst, 
-            width=128, height=160, rotation=270,
+            width=128, height=160, rotation=90,
             invert=False, backlight=None)
         
         self.height = self.disp.height
@@ -74,6 +74,7 @@ class DisplayThread(BaseThread):
             sleep(0.8)
 
         self.clear_display()
+        self._display_logs()
 
     def clear_image(self):
         """Overwrite internal image with black rectangle."""
@@ -98,7 +99,7 @@ class DisplayThread(BaseThread):
         """Show multiples lines on display."""
         self.clear_image()
         for line_idx, line in enumerate(lines):
-            self.draw.text((5, 5 + (10*line_idx)), line, 
+            self.draw.text((4, 4 + (10*line_idx)), line, 
                            font=self.font_small)
         self.disp.display(self.img)
 
@@ -121,12 +122,12 @@ class LogDisplayWriter(logging.Handler):
 
         logging.getLogger().addHandler(self)
         
-        # Because of its size, the display can only show 11 lines.
+        # Because of its size, the display can only show 12 lines.
         # All lines are saved in this queue.
         # If a a new line is appended, when maxlen is reached, the queue
         # deletes oldest line at the top and append the new line at
         # the bottom.
-        self.log_queue = deque(maxlen=11)
+        self.log_queue = deque(maxlen=12)
 
     def emit(self, record):
         """Overload of logging.Handler method.

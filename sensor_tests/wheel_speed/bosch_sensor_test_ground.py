@@ -2,8 +2,8 @@ import RPi.GPIO as GPIO            # import RPi.GPIO module
 import time         
 import datetime                     # lets us have a delay  
 
-# GPIO_SIGNAL_PIN = 2
-GPIO_SIGNAL_PIN = 3
+GPIO_SIGNAL_PIN = 2
+# GPIO_SIGNAL_PIN = 3
 
 def sensorCallback(channel):
   # Called if sensor output changes

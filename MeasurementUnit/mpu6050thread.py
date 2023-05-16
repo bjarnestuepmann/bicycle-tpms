@@ -1,11 +1,11 @@
-from basethread import BaseThread
+from Documents.iTPMS.MeasurementUnit.sensorreader import SensorReader
 from datalogger import DataLogger
 from threading import Event
 import smbus2
 import numpy as np
 import time
 
-class MPU6050Thread(BaseThread):
+class ImuReader(SensorReader):
 
     ACCEL_XOUT_ADDRESS = 0x3b
     ACCEL_YOUT_ADDRESS = 0x3d
@@ -16,7 +16,7 @@ class MPU6050Thread(BaseThread):
     GYRO_ZOUT_ADDRESS = 0x47
 
     def __init__(self, name: str, start_measurement_event: Event, terminated_event: Event, data_logger: DataLogger, i2c_bus: int, address: int):
-        super(MPU6050Thread, self).__init__(name, start_measurement_event, terminated_event)
+        super(ImuReader, self).__init__(name, start_measurement_event, terminated_event)
 
         self.data_logger = data_logger
         self.i2c_bus = i2c_bus
@@ -33,11 +33,9 @@ class MPU6050Thread(BaseThread):
         self.data = []
 
     def measurement_loop(self):
-        """
-            Reads raw values from sensor and store them in temp data storage.
-            After measurement: Postprocessing the raw data and store them to
-            file.
-        """
+        """Reads raw values from sensor and store them in temp data storage.
+        After measurement: Postprocessing the raw data and store them to
+        file."""
         while self.start_measurement_event.is_set():
             timestamp = time.time()
             raw_values = self.bus.read_i2c_block_data(self.address, 0x3b, 14)
@@ -47,11 +45,17 @@ class MPU6050Thread(BaseThread):
         self.data_logger.write_measurements_to_file(np.array(self.data), self.name, self.data_header)
         self.reset_internal_data()
     
+    def streaming_loop(self):
+        """ TODO: Stream the sensor data.
+        Currently this function returns when start_measurement_event is
+        set."""
+        while not self.start_measurement_event.is_set():
+            self.start_measurement_event.wait(timeout=1)
+
+    
     def postprocess_raw_data(self):
-        """
-            Takes the raw byte values and bring them into right order.
-            Store them in python list to write them to file.
-        """
+        """Takes the raw byte values and bring them into right order.
+        Store them in python list to write them to file."""
         current_data = [0] * self.measurement_count
         for timestamp, raw_values in self.raw_data.items():
             current_data[0] = timestamp

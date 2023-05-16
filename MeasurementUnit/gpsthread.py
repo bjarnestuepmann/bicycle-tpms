@@ -5,8 +5,9 @@ from enum import IntEnum
 import logging
 
 from pyubx2 import UBXReader
+import zmq
 
-from basethread import BaseThread
+from Documents.iTPMS.MeasurementUnit.sensorreader import SensorReader
 from datalogger import DataLogger
 
 class NavStatToIntConverter(IntEnum):
@@ -19,7 +20,7 @@ class NavStatToIntConverter(IntEnum):
     RK = 6
     TT = 7
 
-class GPSThread(BaseThread):
+class GpsReader(SensorReader):
 
     def __init__(self, name: str, 
                  start_measurement_event: Event,
@@ -31,6 +32,12 @@ class GPSThread(BaseThread):
 
         self.data_logger = data_logger
         self.measurements = list()
+
+        # Prepare socket for sensor data publishing.
+        context = zmq.Context()
+        self.pub_sock = context.socket(zmq.PUB)
+        self.pub_sock.bind("ipc://sensor." + self.name)
+
         self._connect(port)
     
     def _connect(self, port):
@@ -45,22 +52,41 @@ class GPSThread(BaseThread):
             permanently to file.
         """
         # measurement ->  [timestamp, lon, lat, sog, status, numSV]
-        measurement = [-1] * 6
+        measurement = [None] * 6
         while self.start_measurement_event.is_set():
-            (raw_data, msg) = self.ubr.read()
-            measurement[0] = time.time()
-            if msg.identity == "PUBX00":
-                self._parse_pubx00_msg(measurement, msg)
-            elif msg.identity == "NAV-PVT":
-                self._parse_nav_pvt_msg(measurement, msg)
-            else:
-                logging.warning("Receive unknown message type:", msg.identity)
-                continue
-            
+            self._read_incoming_msg(measurement)
+
             self.measurements.append(measurement.copy())
 
         self._write_data_to_file()
-        self.measurements = list()
+        self.measurements.clear()
+
+    def streaming_loop(self):
+        """
+            Read messages from GPS sensor and store them to internal data.
+            After stopping the measurement, this function saves the data
+            permanently to file.
+        """
+        # measurement ->  [timestamp, lon, lat, sog, status, numSV]
+        measurement = [None] * 6
+        while not self.start_measurement_event.is_set():
+            self._read_incoming_msg(measurement)
+            
+            self.pub_sock.send_pyobj(measurement)
+
+        self.measurements.clear()
+
+    def _read_incoming_msg(self, measurement):
+        """Blocks until new msg arrives.
+        Read the values and store them in passed list reference."""
+        (raw_data, msg) = self.ubr.read()
+        measurement[0] = time.time()
+        if msg.identity == "PUBX00":
+            self._parse_pubx00_msg(measurement, msg)
+        elif msg.identity == "NAV-PVT":
+            self._parse_nav_pvt_msg(measurement, msg)
+        else:
+            logging.warning(f"Receive unknown message type: {msg.identity}")
 
     def _parse_pubx00_msg(self, measurement, msg):
         """Parse required values from msg into internal list."""

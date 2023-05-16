@@ -3,10 +3,10 @@ import logging
 
 import RPi.GPIO as GPIO 
 
-from basethread import BaseThread
+from measurementunitcomponent import MeasurementUnitComponent
 
 
-class RemoteControlThread(BaseThread):
+class RemoteControlThread(MeasurementUnitComponent):
 
     def __init__(self, name: str,
                  start_measurement_event: Event,
@@ -33,6 +33,7 @@ class RemoteControlThread(BaseThread):
         """Wait for user input with buttons and
         throw events for starting and stopping measurement.
         """
+        logging.info("Ready to receive input.")
         GPIO.add_event_detect(self.pinA, GPIO.FALLING)
         while(not self.terminated_event.is_set()):
             if self.start_measurement_event.is_set():
